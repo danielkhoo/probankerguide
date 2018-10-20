@@ -1,0 +1,72 @@
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #000000;
+}
+#sideNavItem{
+    color: #f1f1f1;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#sideNavItem a:hover{
+    background: #ffffff;
+}
+#sideNavItem a:link, a:visited {
+    padding: 15px 0 15px 20px;
+    display: block;
+    width: 200px;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.content {
+    margin-left: 200px;
+    height: auto;
+    width: auto;
+    position: relative;
+    overflow: auto; 
+    z-index: 1;
+}
+/* .info {
+    width: 1440px;
+    height: 1300px;
+    position: relative;
+    background: #f55;
+} */
+
+section {
+    width: 100%;
+    display: table;
+    margin: 0;
+    padding: 90px;
+    background-color: #EB5160;
+    height: 90vh;
+  }
+.sectionDark {
+    color: #f1f1f1;
+}
+  /*  ===============  Scrollbar  ===============  */
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #1B998B;
+    width: 0%;
+  }
+  /*  ===============  Scrollbar  ===============  */
