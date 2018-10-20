@@ -11,7 +11,7 @@
     text-transform: uppercase;
 }
 #sideNavItem a:hover{
-    background: #ffffff;
+    background: #4D4D4D;
 }
 #sideNavItem a:link, a:visited {
     padding: 15px 0 15px 20px;
