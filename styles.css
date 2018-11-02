@@ -1,3 +1,10 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .sidebar {
     position: fixed;
     width: 200px;
@@ -7,14 +14,14 @@
 #sideNavItem{
     color: #f1f1f1;
     font-size: 16px;
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
 }
 #sideNavItem a:hover{
     background: #4D4D4D;
 }
 #sideNavItem a:link, a:visited {
-    padding: 15px 0 15px 20px;
+    padding: 15px 20px 10px 0;
     display: block;
     width: 200px;
     text-decoration: inherit;
