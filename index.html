@@ -169,19 +169,25 @@
             </div>
             <br>
             <h2>Liability</h2>
-            <div class="accordion" id="accordionLiabilities>
+            <div class="accordion" id="accordionLiabilities">
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseOne" aria-expanded="true" aria-controls="l_collapseOne">
-                      Collapsible Group Item #1
+                      Federal Funds Purchased (FFP)
                     </button>
                   </h5>
                 </div>
 
                 <div id="l_collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLiabilities">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    The CEO can borrow from other banks and financial institutions through the overnight Federal Funds
+                    market. If some purchased funds turn out to be un-needed, the bank pays a transaction cost to borrow them
+                    initially and to re-lend them in the market as FFS. (See Section 4.11.)
+                    A sound bank will pay a rate on FFP that is equal to that earned on FFS. However, as a bank's
+                    leverage increases above some threshold value, its interest rate paid on FFP may include a default risk
+                    premium. Market investors will also stop lending to a bank that appears too risky. FFP pricing and rationing
+                    are both described in Section 4.8.
                   </div>
                 </div>
               </div>
@@ -189,13 +195,30 @@
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseTwo" aria-expanded="false" aria-controls="l_collapseTwo">
-                      Collapsible Group Item #2
+                      Demand Deposits (DDR, DDC)
                     </button>
                   </h5>
                 </div>
                 <div id="l_collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLiabilities">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    The default setting does not allow banks to pay explicit interest on any type of demand deposit account.
+                    However, ProBanker permits your Administrator to set positive interest rate ceilings on either type of
+                    demand deposit--so check your Regulatory Environment Report to see what regulations apply to your
+                    simulations.
+                    In addition to the possibility of explicit interest payments, ProBanker banks compete for demand deposit by
+                    paying implicit interest in two forms. First, you can direct advertising expenditures to either type of DD
+                    account. Second, you can vary the level of your checking-related fees to make your DD accounts more
+                    or less attractive. Lower fees elicit greater DD account balances, but your noninterest revenue will also
+                    be lower. Setting the fee rate above 100% makes DD services a profitable activity, but it reduces your
+                    available "interest free" DD balances.
+                    Both types of DD balances are positively related to the effective rate paid on them, negatively related to the
+                    level of market interest rates, and positively related to the level of GDP. DDC are more interest-elastic than
+                    DDR. Demand deposit accounts have substantial customer relationship effects, especially among retail
+                    customers. DDC balances differ from DDR in two additional ways:
+                     DDC balances increase with the volume of corporate loans outstanding, reflecting the
+                    compensating balance arrangements that often accompany FR and FL.
+                     DDC balances fall when the bank's leverage increases beyond some critical level, as
+                    customers fear that they will lose their uninsured funds if the bank fails. (See Section 4.8).
                   </div>
                 </div>
               </div>
@@ -203,13 +226,115 @@
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseThree" aria-expanded="false" aria-controls="l_collapseThree">
-                      Collapsible Group Item #3
+                      Negotiable Certificates of Deposit (CD)
                     </button>
                   </h5>
                 </div>
                 <div id="l_collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLiabilities">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Under normal circumstances CEOs may sell as many (or few) CDs as they desire, with initial maturities of
+                    1, 2 or 4 quarters. In deciding how many CDs to issue, be careful to note that old CDs "age down" as time
+                    passes: last period's 4-quarter CDs become this period's 3-quarter CDs, and so forth.
+                    Riskless CD rates for the coming quarter equal the same-maturity government bond's yield, as reported
+                    in ProBanker's end-of-quarter Bond Reports. However, a highly levered bank's actual cost of CD funds
+                    may incorporate a default premium above the riskless rate. The market also refuses to purchase CDs at any
+                    price once the bank's leverage has become sufficiently high. See Section 4.8.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFour" aria-expanded="true" aria-controls="l_collapseFour">
+                      Passbook Saving Accounts (PASS)
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="l_collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLiabilities">
+                  <div class="card-body">
+                    These retail savings accounts have no fixed maturity, and reputation (customer relationship) effects are
+                    very important. PASS balances are positively related to the effective rate you pay, negatively related to
+                    the effective rate paid by your Regional competitors, and negatively related to the level of government
+                    bond yields. The PASS reserve requirement and interest rate ceiling (if any) can be found in the Economic
+                    Environment Report.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFive" aria-expanded="true" aria-controls="l_collapseFive">
+                      Retail Certificate of Deposit (RCD)
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="l_collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLiabilities">
+                  <div class="card-body">
+                    These are fixed-rate, two-period retail accounts, also called "Retail CDs." RCD balances are sensitive to
+                    the same factors as PASS, but reputation and implicit interest (advertising) effects are less important for
+                    the RCDs. Your administrator may impose a deposit rate ceiling or reserve requirement on Retail CDs,
+                    which will be reported in the Economic Environment Report. (For technical reasons, the absence of an
+                    effective deposit rate ceiling on Retail CDs appears in the Economic Environment Report as a very large
+                    negative number.)
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSix" aria-expanded="true" aria-controls="l_collapseSix">
+                      Long-term Retail Deposits (LTRD)
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="l_collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionLiabilities">
+                  <div class="card-body">
+                    These are fixed rate, 8-period retail accounts, subject to the same economic forces as PASS and Retail CDs.
+                    Implicit interest and reputation effects are moderate -- that is, lower than for Retail CDs. Your administrator
+                    may impose a deposit rate ceiling or reserve requirement for LTRD accounts, which will be noted in the
+                    Economic Environment Report.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSeven" aria-expanded="true" aria-controls="l_collapseSeven">
+                      Discount Window Advances (DWA)
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
+                  <div class="card-body">
+                    ProBanker chooses this amount to balance the balance sheet if your other liabilities are insufficient to fund
+                    the assets you have purchased. The bank pays interest at a rate above its rate on federal funds borrowed
+                    (FFP). (Recall that the FFP rate can include a default risk premium for a highly leveraged bank.) This
+                    penalty rate gives the CEO an incentive to forecast balance sheet positions carefully each period. Compute
+                    the DWA's rate premium from information on your Full Balance Sheet Report: subtract the rate you paid on
+                    FFP from the rate paid on DWA.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseEight" aria-expanded="true" aria-controls="l_collapseEight">
+                      Net Worth (NW)
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
+                  <div class="card-body">
+                    Owner's paid-in capital and retained earnings determine the bank's level of equity capital. Higher dividend
+                    payments reduce NW, while lower dividends or (naturally) higher profits raise it. The CEO can also change
+                    Net Worth by selling new stock or repurchasing stock from the open market. Section 4.10 describes how the
+                    market values bank shares. The Net Worth account must fulfill the capital adequacy regulations, which are
+                    described in Section 4.9.
                   </div>
                 </div>
               </div>
