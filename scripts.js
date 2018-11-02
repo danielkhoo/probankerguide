@@ -1,4 +1,4 @@
-// When the user scrolls the page, execute myFunction 
+// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
