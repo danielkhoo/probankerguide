@@ -17,7 +17,7 @@
     <div class="sidebar">
         <ul class="list-unstyled">
             <li>
-                <div id="sideNavItem"><a href="#section1">
+                <div id="sideNavItem"><a class="active" href="#section1">
                     <i class="glyphicon glyphicon-home"></i>
                     <span>Start</span></a>
                 </div>
@@ -75,8 +75,6 @@
             </div>
         </div>
 
-
-
         <section id="section1" style="background: #283D3B;">
             <div class="jumbotron">
                 <div class="container-fluid">
@@ -94,7 +92,7 @@
             <p>The height is set to 90vh, that means 90% height.</p>
         </section>
 
-        <section id="section3" style="background: #197278;">
+        <section id="section3" class="sectionDark" style="background: #197278;">
             <h1>Gameplay</h1>
             <p>The height is set to 90vh, that means 90% height.</p>
         </section>
@@ -109,7 +107,7 @@
             <p>The height is set to 90vh, that means 90% height.</p>
         </section>
 
-        <section id="section6" class="sectionDark" style="background: #283D3B;">
+        <section id="section6" class="sectionDark" style="background: #197278;">
             <h1>Decisions</h1>
             <p>The height is set to 90vh, that means 90% height.</p>
             <!-- Bank treasury
@@ -153,54 +151,208 @@
             <p>The height is set to 90vh, that means 90% height.</p>
         </section>
 
-        <section id="section8" class="sectionDark" style="background: #283D3B;">
+        <section id="section8" style="background: #EDDDD4;">
             <h1>Balance Sheet</h1>
             <h2>Assets</h2>
             <div class="accordion" id="accordionAssets">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Collapsible Group Item #1
-                    </button>
-                  </h5>
-                </div>
+			  <div class="card">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  Required Reserves
+					</button>
+				  </h5>
+				</div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionAssets">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Collapsible Group Item #2
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAssets">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Collapsible Group Item #3
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAssets">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionAssets">
+				  <div class="card-body">
+					Banks must keep reserve balances at the Federal Reserve Bank, in proportion to their outstanding deposit
+					liabilities. (The Economic Environment Report describes required reserve ratios, which can change over
+					the course of your simulation.) The dollar volume of Required Reserves cannot be known exactly when
+					you are making your decisions, because it depends on your realized deposit balances. Players should
+					estimate their deposit balances, and choose an Initial Reserve Allocation sufficient to satisfy anticipated
+					reserve requirements. If your bank turns out to need reserves in excess of your Initial Reserve Allocation,
+					ProBanker will automatically reduce Federal Funds sold (FFS) or borrow at the Discount Window. Any
+					funds transferred from the latter sources to fulfill RR are assessed a proportional transaction cost of 0.5%
+					(Note: this cost is not an annualized rate and your instructor may choose to increase the cost).
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  Excess Reserve Balances
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAssets">
+				  <div class="card-body">
+					If your "Initial Reserve Allocation" exceeds the level of required reserves, the excess will be held as
+					deposits due from other banks. Although U.S. banks may not (by law) pay explicit interest on these
+					balances, they will perform free services in proportion to the balances you hold with them. These free
+					services frequently relate to check clearing, and hence lower the cost of servicing your demand deposit
+					customers. ER balances earn implicit interest at a rate equal to about 90% (more precisely, 1.0 minus
+					the DDC reserve requirement) of the period's average risk-free federal funds rate. (This rate of implicit
+					compensation for interbank demand balances assumes perfect competition for such balances.) If implicit
+					interest earned exceeds noninterest DD operating costs, the excess is lost to the bank. ER balances incur
+					no transaction costs.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  Interbank Call Money Lent
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAssets">
+				  <div class="card-body">
+					The CEO chooses how much to lend to other banks and financial institutions through the Federal Funds
+					market. FFS earn an expected return equal to the riskless 90-day CD rate, which is known for certain
+					when Bank decisions are made. However, the actual FFS rate will differ from the 90-day CD rate by a
+					random factor that reflects unanticipated money market developments during the quarter. (Because most
+					FFS lending has a very short maturity the average Fed Funds rate over the coming quarter cannot be known
+					when you are making your decisions.) Your bank's ultimate FFS position also may differ from what you
+					entered as an initial decision, because FFS balances play an important part in the process for balancing
+					each bank's balance sheet. (Section 4.11 below provides details.)
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingFour">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					  Fixed-Rate Loans
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionAssets">
+				  <div class="card-body">
+					You select a contract rate to charge on these one-period corporate loans. Your bank's FR volume depends
+					upon (among other things) the level of market interest rates, GDP, competing banks' FR rates, and
+					customers' expected cost of your bank's floating rate loans. There is an element of short-term customer
+					loyalty in the FR market, which makes the present volume of loans depend on past volumes. Finally, the
+					bank can choose credit standards (the "Corporate Loan Standard" on the Decision Page) that affect default
+					probability, operating costs, and loan volumes. (See Section 4.6.)
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingFive">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					  Floating-Rate Loans
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionAssets">
+				  <div class="card-body">
+					These two-period loans are priced as a SPREAD over an economy-wide "floating rate loan base," which is
+					the average of the 90-day CD rate and the quarter's risk-free Federal Funds rate. A loan's SPREAD
+					stays constant throughout its life, although the actual interest rate varies with the floating rate loan base. FL
+
+					demand is inversely related to the average contract rate that customers expect to pay over the loan's two-
+					period life. (The expected FL contract rate is the average of this period's rate and the expected rate next
+
+					period, given the bank's SPREAD and the forward rate implied by the government bond term structure.)
+					FL volume is also affected by the determinants of FR.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingSix">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					  Consumer Loans
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionAssets">
+				  <div class="card-body">
+					These consumer loans mature in four periods. The CEO chooses a loan rate and an (dollar) advertising
+					level directed at the INST market. INST customers are moderately responsive to advertising. A bank's
+					market share tends to persist through time, due to moderately strong customer relationship effects.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingSeven">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+					  Mortgages
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
+				  <div class="card-body">
+					These 8-period loans have a fixed contract rate and are not marketable. Advertising expenditures have
+					some effect on the demand for a bank's new MORT, though not so much as for INST. Customer relationship
+					effects are also smaller than for INST.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingEight">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+					  Government Bonds
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
+				  <div class="card-body">
+					The CEO may purchase new government bonds, which carry a fixed interest rate and mature in 8 periods.
+					New bonds are purchased at par, and the bank's accountants carry bonds on the balance sheet at their
+					acquisition cost. However, subsequent market rate changes affect bond market values. (A bond's current
+					market value is obtained by discounting its remaining cash flows at the riskless interest rate for the
+					corresponding time to maturity. These rates are reported in the Bond Market Report.) The CEO can sell
+					seasoned bonds by specifying the maturity date and book value of bonds to be sold. (ProBanker provides
+					no opportunity to purchase seasoned bonds.) The Economic Environment Report specifies the corporate
+					tax rate on capital gains (losses) when bonds are sold before maturity.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingNine">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+					  Fixed Assets
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionAssets">
+				  <div class="card-body">
+					The bank utilizes fixed assets (land, buildings, equipment, and furniture) to produce financial
+					intermediation services. These assets depreciate at an exogenous rate, generating quarterly operating
+					expenses. You cannot change the level of your bank's fixed asset stock, or its depreciation rate.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingTen">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+					  Loan Loss Allowance
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionAssets">
+				  <div class="card-body">
+					A single loan loss allowance account serves as a reserve ("contra-account") for defaults on all four loan
+					types. Losses are charged to this account when they occur; LLA is replenished via the expense item
+					Provision for Loan Losses (PLL).
+					Another term for the loan loss allowance (LLA) is the "Loan Loss Reserve." Nonfinancial firms show
+					many such reserve accounts as part of their net worth. For banks, the LLA is generally shown on the asset
+					side of the balance sheet.
+
+
+				  </div>
+				</div>
+			  </div>
+			</div>
             <br>
             <h2>Liability</h2>
             <div class="accordion" id="accordionLiabilities">
@@ -342,7 +494,7 @@
                   </h5>
                 </div>
 
-                <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
+                <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionLiabilities">
                   <div class="card-body">
                     ProBanker chooses this amount to balance the balance sheet if your other liabilities are insufficient to fund
                     the assets you have purchased. The bank pays interest at a rate above its rate on federal funds borrowed
@@ -362,7 +514,7 @@
                   </h5>
                 </div>
 
-                <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
+                <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionLiabilities">
                   <div class="card-body">
                     Owner's paid-in capital and retained earnings determine the bank's level of equity capital. Higher dividend
                     payments reduce NW, while lower dividends or (naturally) higher profits raise it. The CEO can also change
