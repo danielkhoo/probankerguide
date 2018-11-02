@@ -65,7 +65,7 @@ $(document).scroll(function () {
 	var seven_top = $('#section7').position().top;
     var eight_top = $('#section8').position().top;
 
-    if (scroll_top > one_top && scroll_top < two_top - 100) {
+    if (scroll_top > one_top - 100 && scroll_top < two_top - 100) {
         $('a[href="#section1"]').addClass('active');
 		$('a[href="#section2"]').removeClass('active');
 		$('a[href="#section3"]').removeClass('active');
