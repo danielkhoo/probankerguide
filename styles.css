@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .sidebar {
     position: fixed;
     width: 200px;
@@ -42,6 +41,11 @@
     overflow: auto;
     z-index: 1;
 }
+
+.content p, ul, li, a {
+	font-size: 13px;
+}
+
 /* .info {
     width: 1440px;
     height: 1300px;
