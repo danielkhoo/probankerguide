@@ -1,571 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guide to ProBanker</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-git2.min.js"></script>
-    <script src="scripts.js"></script>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Guide to ProBanker</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-git2.min.js"></script>
+        <script src="scripts.js"></script>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
 
-<body>
-    <div class="sidebar">
-        <ul class="list-unstyled">
-            <li>
-                <div id="sideNavItem"><a class="active" href="#section1">
-                    <i class="glyphicon glyphicon-home"></i>
-                    <span>Start</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section2">
-                    <i class="glyphicon glyphicon-facetime-video"></i>
-                    <span>Welcome</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section3">
-                    <i class="glyphicon glyphicon-retweet"></i>
-                    <span>Gameplay</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section4">
-                    <i class="glyphicon glyphicon-facetime-video"></i>
-                    <span>Learning</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section5">
-                    <i class="glyphicon glyphicon-user"></i>
-                    <span>Game Modes</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section6">
-                    <i class="glyphicon glyphicon-pencil"></i>
-                    <span>Decisions</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section7">
-                    <i class="glyphicon glyphicon-facetime-video"></i>
-                    <span>Teamwork</span></a>
-                </div>
-            </li>
-            <li>
-                <div id="sideNavItem"><a href="#section8">
-                    <i class="glyphicon glyphicon-usd"></i>
-                    <span>Balance Sheet</span></a>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="content">
-
-        <div class="header">
-            <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-            </div>
+    <body>
+        <div class="sidebar">
+            <ul class="list-unstyled">
+                <li>
+                    <div id="sideNavItem"><a class="active" href="#section1">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span>Start</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section2">
+                            <i class="glyphicon glyphicon-facetime-video"></i>
+                            <span>Welcome</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section3">
+                            <i class="glyphicon glyphicon-retweet"></i>
+                            <span>Gameplay</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section4">
+                            <i class="glyphicon glyphicon-facetime-video"></i>
+                            <span>Learning</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section5">
+                            <i class="glyphicon glyphicon-user"></i>
+                            <span>Game Modes</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section6">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                            <span>Decisions</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section7">
+                            <i class="glyphicon glyphicon-facetime-video"></i>
+                            <span>Teamwork</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="sideNavItem"><a href="#section8">
+                            <i class="glyphicon glyphicon-usd"></i>
+                            <span>Balance Sheet</span></a>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <section id="section1" style="background: #283D3B;">
-            <div class="jumbotron">
-                <div class="container-fluid">
-                    <h1>The Ultimate Guide to ProBanker</h1>
-                    <p>Strategy, tactics and a quick reference guide to help your bank become profitable.</p>
-                    <p>
-                        <a class="btn btn-primary btn-lg">Get Started</a>
-                    </p>
+        <div class="content">
+
+            <div class="header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
                 </div>
             </div>
-        </section>
 
-        <section id="section2" style="background: #EDDDD4;">
-            <h1>Welcome</h1>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
-        </section>
+            <section id="section1" style="background: #283D3B;">
+                <div class="jumbotron">
+                    <div class="container-fluid">
+                        <h1>The Ultimate Guide to ProBanker</h1>
+                        <p>Strategy, tactics and a quick reference guide to help your bank become profitable.</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg">Get Started</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section id="section3" class="sectionDark" style="background: #197278;">
-            <h1>Gameplay</h1>
-            <p>The height is set to 90vh, that means 90% height.</p>
-        </section>
+            <section id="section2" style="background: #EDDDD4;">
+                <h1>Welcome</h1>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>In this trimester, you will be using an interactive simulation software, ProBanker, which is 
+                            <b>TOTALLY DIFFERENT</b> 
+                            from your normal classroom setting! Students will be working in teams, to input a range of 
+                            decisions which will ultimately affect the next decisions made for the team, and... 
+                            <b>THE WHOLE CLASS!</b>
+                            <br><br>
+                            You will be using this tool <b>VERY OFTEN</b>. So.... watch the introductory video to find out what 
+                            Prof. Pear has to tell you guys! 
+                            <br><br>
+                            Good Luck!</p>
 
-        <section id="section4" class="sectionDark" style="background: #283D3B;">
-            <h1>Learning</h1>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/pep2NhgdZ6E"></iframe>
-        </section>
+                    </div>
+                    <div class="col-md-5">
+                        <iframe class="video-class" width="640" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
+                    </div>
+                </div>
+            </section>
 
-        <section id="section5" style="background: #EDDDD4;">
-            <h1>Game Modes</h1>
-			<p><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
-			<hr>
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Autosim Mode</h2>
-					<ul>
-						<li>Management team selects a template and creates a "game"</li>
-						<li>"Play Against Machine" --> One bank competes against pre-programmed competitors.</li>
-						<li>Permits you to learn about ProBanker‘s program features and economic characteristics.</li>
-						<li>Permits you to simulate a variety of pricing, advertising, and funding decisions, starting from the same point in time by rolling back the quarters ("Turn Back Time").</li>
-						<li>Costs, revenues, loan demands, and deposit supplies resulting from their decisions are available in reports.</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<h2>Competitive Mode</h2>
-					<ul>
-						<li>Administrator selects starting financial condition for all banks in the "economy". Each management team controls a single bank.</li>
-						<li>Compete directly with other bankers in a particular region.</li>
-						<li>Banks in different regions have no direct effect on one another, although they do operate under the same macroeconomic conditions.</li>
-						</li>Players cannot simulate or roll back in this mode.</li>
-						<li>Costs, revenues, loan demands, and deposit supplies resulting from player decisions are available in reports.</li>
-					</ul>
-				</div>
-			</div>
-			<br>
-			<div class="row" style="justify-content: center;">
-				<div class="col-md-6">
-					<img src="images/autosimProcess.gif" width="100%" height="auto">
-				</div>
-				<div class="col-md-6">
-					<img src="images/competitiveProcess.gif" width="100%" height="auto">
-				</div>
-			</div>
-        </section>
+            <section id="section3" class="sectionDark" style="background: #197278;">
+                <h1>Gameplay</h1>
+                <p>The height is set to 90vh, that means 90% height.</p>
+            </section>
 
-        <section id="section6" class="sectionDark" style="background: #197278;">
-            <h1>Decisions</h1>
-            <p>The height is set to 90vh, that means 90% height.</p>
-            <!-- Bank treasury
-            Assets - other
-            Assets - loans
-            Liabilities - deposits
-            Bank - general -->
-            <div>
-                <div class="tab">
-                  <button class="tablinks active" onclick="openCity(event, 'tab1')">Bank Treasury</button>
-                  <button class="tablinks" onclick="openCity(event, 'tab2')">Assets - Other</button>
-                  <button class="tablinks" onclick="openCity(event, 'tab3')">Assets - Loans</button>
-                  <button class="tablinks" onclick="openCity(event, 'tab4')">Liabilities - Deposits</button>
-                  <button class="tablinks" onclick="openCity(event, 'tab5')">Bank - General</button>
+            <section id="section4" class="sectionDark" style="background: #283D3B;">
+                <h1>Learning</h1>
+                <div class="row">
+                    <div class="col-md-7">
+                        <iframe class="video-class" width="640" height="360" src="https://www.youtube.com/embed/pep2NhgdZ6E"></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <p>"Why do we need to play this game? What should we be focusing on? How do we get the bonus / reward 
+                            marks? If we lose money in the game, will marks be deducted? How do we win this game?" 
+                            <br><br>
+                            Watch the video to answer ALL these questions! *psst* TIPS is given in this video!
+                        </p>
+                    </div>
                 </div>
-                <div id="tab1" class="tabcontent">
-                  <h3>London</h3>
-                  <p>London is the capital city of England.</p>
-                </div>
-                <div id="tab2" class="tabcontent">
-                  <h3>Paris</h3>
-                  <p>Paris is the capital of France.</p>
-                </div>
-                <div id="tab3" class="tabcontent">
-                  <h3>Tokyo</h3>
-                  <p>Tokyo is the capital of Japan.</p>
-                </div>
-                <div id="tab4" class="tabcontent">
-                  <h3>Paris</h3>
-                  <p>Paris is the capital of France.</p>
-                </div>
-                <div id="tab5" class="tabcontent">
-                  <h3>Tokyo</h3>
-                  <p>Tokyo is the capital of Japan.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="section7" class="sectionDark"	style="background: #283D3B;">
-            <h1>Teamwork</h1>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/OJ5w7N6uYpc"></iframe>
-        </section>
+            <section id="section5" style="background: #EDDDD4;">
+                <h1>Game Modes</h1>
+                <p><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Autosim Mode</h2>
+                        <ul>
+                            <li>Management team selects a template and creates a "game"</li>
+                            <li>"Play Against Machine" --> One bank competes against pre-programmed competitors.</li>
+                            <li>Permits you to learn about ProBanker‘s program features and economic characteristics.</li>
+                            <li>Permits you to simulate a variety of pricing, advertising, and funding decisions, starting from the same point in time by rolling back the quarters ("Turn Back Time").</li>
+                            <li>Costs, revenues, loan demands, and deposit supplies resulting from their decisions are available in reports.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Competitive Mode</h2>
+                        <ul>
+                            <li>Administrator selects starting financial condition for all banks in the "economy". Each management team controls a single bank.</li>
+                            <li>Compete directly with other bankers in a particular region.</li>
+                            <li>Banks in different regions have no direct effect on one another, although they do operate under the same macroeconomic conditions.</li>
+                            </li>Players cannot simulate or roll back in this mode.</li>
+                            <li>Costs, revenues, loan demands, and deposit supplies resulting from player decisions are available in reports.</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-6">
+                        <img src="images/autosimProcess.gif" width="100%" height="auto">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/competitiveProcess.gif" width="100%" height="auto">
+                    </div>
+                </div>
+            </section>
 
-        <section id="section8" style="background: #EDDDD4;">
-            <h1>Balance Sheet</h1>
-            <h2>Assets</h2>
-            <div class="accordion" id="accordionAssets">
-			  <div class="card">
-				<div class="card-header" id="headingOne">
-				  <h5 class="mb-0">
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					  Required Reserves
-					</button>
-				  </h5>
-				</div>
+            <section id="section6" class="sectionDark" style="background: #197278;">
+                <h1>Decisions</h1>
+                <p>The height is set to 90vh, that means 90% height.</p>
+                <!-- Bank treasury
+                Assets - other
+                Assets - loans
+                Liabilities - deposits
+                Bank - general -->
+                <div>
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openCity(event, 'tab1')">Bank Treasury</button>
+                        <button class="tablinks" onclick="openCity(event, 'tab2')">Assets - Other</button>
+                        <button class="tablinks" onclick="openCity(event, 'tab3')">Assets - Loans</button>
+                        <button class="tablinks" onclick="openCity(event, 'tab4')">Liabilities - Deposits</button>
+                        <button class="tablinks" onclick="openCity(event, 'tab5')">Bank - General</button>
+                    </div>
+                    <div id="tab1" class="tabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
+                    <div id="tab2" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+                    <div id="tab3" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    <div id="tab4" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+                    <div id="tab5" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </div>
+            </section>
 
-				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionAssets">
-				  <div class="card-body">
-					Banks must keep reserve balances at the Federal Reserve Bank, in proportion to their outstanding deposit
-					liabilities. (The Economic Environment Report describes required reserve ratios, which can change over
-					the course of your simulation.) The dollar volume of Required Reserves cannot be known exactly when
-					you are making your decisions, because it depends on your realized deposit balances. Players should
-					estimate their deposit balances, and choose an Initial Reserve Allocation sufficient to satisfy anticipated
-					reserve requirements. If your bank turns out to need reserves in excess of your Initial Reserve Allocation,
-					ProBanker will automatically reduce Federal Funds sold (FFS) or borrow at the Discount Window. Any
-					funds transferred from the latter sources to fulfill RR are assessed a proportional transaction cost of 0.5%
-					(Note: this cost is not an annualized rate and your instructor may choose to increase the cost).
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingTwo">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					  Excess Reserve Balances
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAssets">
-				  <div class="card-body">
-					If your "Initial Reserve Allocation" exceeds the level of required reserves, the excess will be held as
-					deposits due from other banks. Although U.S. banks may not (by law) pay explicit interest on these
-					balances, they will perform free services in proportion to the balances you hold with them. These free
-					services frequently relate to check clearing, and hence lower the cost of servicing your demand deposit
-					customers. ER balances earn implicit interest at a rate equal to about 90% (more precisely, 1.0 minus
-					the DDC reserve requirement) of the period's average risk-free federal funds rate. (This rate of implicit
-					compensation for interbank demand balances assumes perfect competition for such balances.) If implicit
-					interest earned exceeds noninterest DD operating costs, the excess is lost to the bank. ER balances incur
-					no transaction costs.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingThree">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					  Interbank Call Money Lent
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAssets">
-				  <div class="card-body">
-					The CEO chooses how much to lend to other banks and financial institutions through the Federal Funds
-					market. FFS earn an expected return equal to the riskless 90-day CD rate, which is known for certain
-					when Bank decisions are made. However, the actual FFS rate will differ from the 90-day CD rate by a
-					random factor that reflects unanticipated money market developments during the quarter. (Because most
-					FFS lending has a very short maturity the average Fed Funds rate over the coming quarter cannot be known
-					when you are making your decisions.) Your bank's ultimate FFS position also may differ from what you
-					entered as an initial decision, because FFS balances play an important part in the process for balancing
-					each bank's balance sheet. (Section 4.11 below provides details.)
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingFour">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					  Fixed-Rate Loans
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionAssets">
-				  <div class="card-body">
-					You select a contract rate to charge on these one-period corporate loans. Your bank's FR volume depends
-					upon (among other things) the level of market interest rates, GDP, competing banks' FR rates, and
-					customers' expected cost of your bank's floating rate loans. There is an element of short-term customer
-					loyalty in the FR market, which makes the present volume of loans depend on past volumes. Finally, the
-					bank can choose credit standards (the "Corporate Loan Standard" on the Decision Page) that affect default
-					probability, operating costs, and loan volumes. (See Section 4.6.)
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingFive">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-					  Floating-Rate Loans
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionAssets">
-				  <div class="card-body">
-					These two-period loans are priced as a SPREAD over an economy-wide "floating rate loan base," which is
-					the average of the 90-day CD rate and the quarter's risk-free Federal Funds rate. A loan's SPREAD
-					stays constant throughout its life, although the actual interest rate varies with the floating rate loan base. FL
+            <section id="section7" class="sectionDark"	style="background: #283D3B;">
+                <h1>Teamwork</h1>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>How can your friend, team members be a BIG HELP to you?
+                            <br><br>
+                            In this video, Prof. Pear has provided suggestions on what you can do FROM THE START of the trimester!
+                        </p> 
 
-					demand is inversely related to the average contract rate that customers expect to pay over the loan's two-
-					period life. (The expected FL contract rate is the average of this period's rate and the expected rate next
+                    </div>
+                    <div class="col-md-5">
+                        <iframe class="video-class" width="640" height="360" src="https://www.youtube.com/embed/OJ5w7N6uYpc"></iframe>
+                    </div>
+                </div>
+            </section>
 
-					period, given the bank's SPREAD and the forward rate implied by the government bond term structure.)
-					FL volume is also affected by the determinants of FR.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingSix">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-					  Consumer Loans
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionAssets">
-				  <div class="card-body">
-					These consumer loans mature in four periods. The CEO chooses a loan rate and an (dollar) advertising
-					level directed at the INST market. INST customers are moderately responsive to advertising. A bank's
-					market share tends to persist through time, due to moderately strong customer relationship effects.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingSeven">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-					  Mortgages
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
-				  <div class="card-body">
-					These 8-period loans have a fixed contract rate and are not marketable. Advertising expenditures have
-					some effect on the demand for a bank's new MORT, though not so much as for INST. Customer relationship
-					effects are also smaller than for INST.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingEight">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-					  Government Bonds
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
-				  <div class="card-body">
-					The CEO may purchase new government bonds, which carry a fixed interest rate and mature in 8 periods.
-					New bonds are purchased at par, and the bank's accountants carry bonds on the balance sheet at their
-					acquisition cost. However, subsequent market rate changes affect bond market values. (A bond's current
-					market value is obtained by discounting its remaining cash flows at the riskless interest rate for the
-					corresponding time to maturity. These rates are reported in the Bond Market Report.) The CEO can sell
-					seasoned bonds by specifying the maturity date and book value of bonds to be sold. (ProBanker provides
-					no opportunity to purchase seasoned bonds.) The Economic Environment Report specifies the corporate
-					tax rate on capital gains (losses) when bonds are sold before maturity.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingNine">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-					  Fixed Assets
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionAssets">
-				  <div class="card-body">
-					The bank utilizes fixed assets (land, buildings, equipment, and furniture) to produce financial
-					intermediation services. These assets depreciate at an exogenous rate, generating quarterly operating
-					expenses. You cannot change the level of your bank's fixed asset stock, or its depreciation rate.
-				  </div>
-				</div>
-			  </div>
-			  <div class="card">
-				<div class="card-header" id="headingTen">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-					  Loan Loss Allowance
-					</button>
-				  </h5>
-				</div>
-				<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionAssets">
-				  <div class="card-body">
-					A single loan loss allowance account serves as a reserve ("contra-account") for defaults on all four loan
-					types. Losses are charged to this account when they occur; LLA is replenished via the expense item
-					Provision for Loan Losses (PLL).
-					Another term for the loan loss allowance (LLA) is the "Loan Loss Reserve." Nonfinancial firms show
-					many such reserve accounts as part of their net worth. For banks, the LLA is generally shown on the asset
-					side of the balance sheet.
+            <section id="section8" style="background: #EDDDD4;">
+                <h1>Balance Sheet</h1>
+                <h2>Assets</h2>
+                <div class="accordion" id="accordionAssets">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Required Reserves
+                                </button>
+                            </h5>
+                        </div>
 
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                Banks must keep reserve balances at the Federal Reserve Bank, in proportion to their outstanding deposit
+                                liabilities. (The Economic Environment Report describes required reserve ratios, which can change over
+                                the course of your simulation.) The dollar volume of Required Reserves cannot be known exactly when
+                                you are making your decisions, because it depends on your realized deposit balances. Players should
+                                estimate their deposit balances, and choose an Initial Reserve Allocation sufficient to satisfy anticipated
+                                reserve requirements. If your bank turns out to need reserves in excess of your Initial Reserve Allocation,
+                                ProBanker will automatically reduce Federal Funds sold (FFS) or borrow at the Discount Window. Any
+                                funds transferred from the latter sources to fulfill RR are assessed a proportional transaction cost of 0.5%
+                                (Note: this cost is not an annualized rate and your instructor may choose to increase the cost).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Excess Reserve Balances
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                If your "Initial Reserve Allocation" exceeds the level of required reserves, the excess will be held as
+                                deposits due from other banks. Although U.S. banks may not (by law) pay explicit interest on these
+                                balances, they will perform free services in proportion to the balances you hold with them. These free
+                                services frequently relate to check clearing, and hence lower the cost of servicing your demand deposit
+                                customers. ER balances earn implicit interest at a rate equal to about 90% (more precisely, 1.0 minus
+                                the DDC reserve requirement) of the period's average risk-free federal funds rate. (This rate of implicit
+                                compensation for interbank demand balances assumes perfect competition for such balances.) If implicit
+                                interest earned exceeds noninterest DD operating costs, the excess is lost to the bank. ER balances incur
+                                no transaction costs.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Interbank Call Money Lent
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                The CEO chooses how much to lend to other banks and financial institutions through the Federal Funds
+                                market. FFS earn an expected return equal to the riskless 90-day CD rate, which is known for certain
+                                when Bank decisions are made. However, the actual FFS rate will differ from the 90-day CD rate by a
+                                random factor that reflects unanticipated money market developments during the quarter. (Because most
+                                FFS lending has a very short maturity the average Fed Funds rate over the coming quarter cannot be known
+                                when you are making your decisions.) Your bank's ultimate FFS position also may differ from what you
+                                entered as an initial decision, because FFS balances play an important part in the process for balancing
+                                each bank's balance sheet. (Section 4.11 below provides details.)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Fixed-Rate Loans
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                You select a contract rate to charge on these one-period corporate loans. Your bank's FR volume depends
+                                upon (among other things) the level of market interest rates, GDP, competing banks' FR rates, and
+                                customers' expected cost of your bank's floating rate loans. There is an element of short-term customer
+                                loyalty in the FR market, which makes the present volume of loans depend on past volumes. Finally, the
+                                bank can choose credit standards (the "Corporate Loan Standard" on the Decision Page) that affect default
+                                probability, operating costs, and loan volumes. (See Section 4.6.)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Floating-Rate Loans
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                These two-period loans are priced as a SPREAD over an economy-wide "floating rate loan base," which is
+                                the average of the 90-day CD rate and the quarter's risk-free Federal Funds rate. A loan's SPREAD
+                                stays constant throughout its life, although the actual interest rate varies with the floating rate loan base. FL
 
-				  </div>
-				</div>
-			  </div>
-			</div>
-            <br>
-            <h2>Liability</h2>
-            <div class="accordion" id="accordionLiabilities">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseOne" aria-expanded="true" aria-controls="l_collapseOne">
-                      Federal Funds Purchased (FFP)
-                    </button>
-                  </h5>
-                </div>
+                                demand is inversely related to the average contract rate that customers expect to pay over the loan's two-
+                                period life. (The expected FL contract rate is the average of this period's rate and the expected rate next
 
-                <div id="l_collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    The CEO can borrow from other banks and financial institutions through the overnight Federal Funds
-                    market. If some purchased funds turn out to be un-needed, the bank pays a transaction cost to borrow them
-                    initially and to re-lend them in the market as FFS. (See Section 4.11.)
-                    A sound bank will pay a rate on FFP that is equal to that earned on FFS. However, as a bank's
-                    leverage increases above some threshold value, its interest rate paid on FFP may include a default risk
-                    premium. Market investors will also stop lending to a bank that appears too risky. FFP pricing and rationing
-                    are both described in Section 4.8.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseTwo" aria-expanded="false" aria-controls="l_collapseTwo">
-                      Demand Deposits (DDR, DDC)
-                    </button>
-                  </h5>
-                </div>
-                <div id="l_collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    The default setting does not allow banks to pay explicit interest on any type of demand deposit account.
-                    However, ProBanker permits your Administrator to set positive interest rate ceilings on either type of
-                    demand deposit--so check your Regulatory Environment Report to see what regulations apply to your
-                    simulations.
-                    In addition to the possibility of explicit interest payments, ProBanker banks compete for demand deposit by
-                    paying implicit interest in two forms. First, you can direct advertising expenditures to either type of DD
-                    account. Second, you can vary the level of your checking-related fees to make your DD accounts more
-                    or less attractive. Lower fees elicit greater DD account balances, but your noninterest revenue will also
-                    be lower. Setting the fee rate above 100% makes DD services a profitable activity, but it reduces your
-                    available "interest free" DD balances.
-                    Both types of DD balances are positively related to the effective rate paid on them, negatively related to the
-                    level of market interest rates, and positively related to the level of GDP. DDC are more interest-elastic than
-                    DDR. Demand deposit accounts have substantial customer relationship effects, especially among retail
-                    customers. DDC balances differ from DDR in two additional ways:
-                     DDC balances increase with the volume of corporate loans outstanding, reflecting the
-                    compensating balance arrangements that often accompany FR and FL.
-                     DDC balances fall when the bank's leverage increases beyond some critical level, as
-                    customers fear that they will lose their uninsured funds if the bank fails. (See Section 4.8).
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseThree" aria-expanded="false" aria-controls="l_collapseThree">
-                      Negotiable Certificates of Deposit (CD)
-                    </button>
-                  </h5>
-                </div>
-                <div id="l_collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    Under normal circumstances CEOs may sell as many (or few) CDs as they desire, with initial maturities of
-                    1, 2 or 4 quarters. In deciding how many CDs to issue, be careful to note that old CDs "age down" as time
-                    passes: last period's 4-quarter CDs become this period's 3-quarter CDs, and so forth.
-                    Riskless CD rates for the coming quarter equal the same-maturity government bond's yield, as reported
-                    in ProBanker's end-of-quarter Bond Reports. However, a highly levered bank's actual cost of CD funds
-                    may incorporate a default premium above the riskless rate. The market also refuses to purchase CDs at any
-                    price once the bank's leverage has become sufficiently high. See Section 4.8.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFour" aria-expanded="true" aria-controls="l_collapseFour">
-                      Passbook Saving Accounts (PASS)
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="l_collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    These retail savings accounts have no fixed maturity, and reputation (customer relationship) effects are
-                    very important. PASS balances are positively related to the effective rate you pay, negatively related to
-                    the effective rate paid by your Regional competitors, and negatively related to the level of government
-                    bond yields. The PASS reserve requirement and interest rate ceiling (if any) can be found in the Economic
-                    Environment Report.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFive" aria-expanded="true" aria-controls="l_collapseFive">
-                      Retail Certificate of Deposit (RCD)
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="l_collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    These are fixed-rate, two-period retail accounts, also called "Retail CDs." RCD balances are sensitive to
-                    the same factors as PASS, but reputation and implicit interest (advertising) effects are less important for
-                    the RCDs. Your administrator may impose a deposit rate ceiling or reserve requirement on Retail CDs,
-                    which will be reported in the Economic Environment Report. (For technical reasons, the absence of an
-                    effective deposit rate ceiling on Retail CDs appears in the Economic Environment Report as a very large
-                    negative number.)
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSix">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSix" aria-expanded="true" aria-controls="l_collapseSix">
-                      Long-term Retail Deposits (LTRD)
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="l_collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    These are fixed rate, 8-period retail accounts, subject to the same economic forces as PASS and Retail CDs.
-                    Implicit interest and reputation effects are moderate -- that is, lower than for Retail CDs. Your administrator
-                    may impose a deposit rate ceiling or reserve requirement for LTRD accounts, which will be noted in the
-                    Economic Environment Report.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSeven">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSeven" aria-expanded="true" aria-controls="l_collapseSeven">
-                      Discount Window Advances (DWA)
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    ProBanker chooses this amount to balance the balance sheet if your other liabilities are insufficient to fund
-                    the assets you have purchased. The bank pays interest at a rate above its rate on federal funds borrowed
-                    (FFP). (Recall that the FFP rate can include a default risk premium for a highly leveraged bank.) This
-                    penalty rate gives the CEO an incentive to forecast balance sheet positions carefully each period. Compute
-                    the DWA's rate premium from information on your Full Balance Sheet Report: subtract the rate you paid on
-                    FFP from the rate paid on DWA.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingEight">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseEight" aria-expanded="true" aria-controls="l_collapseEight">
-                      Net Worth (NW)
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionLiabilities">
-                  <div class="card-body">
-                    Owner's paid-in capital and retained earnings determine the bank's level of equity capital. Higher dividend
-                    payments reduce NW, while lower dividends or (naturally) higher profits raise it. The CEO can also change
-                    Net Worth by selling new stock or repurchasing stock from the open market. Section 4.10 describes how the
-                    market values bank shares. The Net Worth account must fulfill the capital adequacy regulations, which are
-                    described in Section 4.9.
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
+                                period, given the bank's SPREAD and the forward rate implied by the government bond term structure.)
+                                FL volume is also affected by the determinants of FR.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Consumer Loans
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                These consumer loans mature in four periods. The CEO chooses a loan rate and an (dollar) advertising
+                                level directed at the INST market. INST customers are moderately responsive to advertising. A bank's
+                                market share tends to persist through time, due to moderately strong customer relationship effects.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Mortgages
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                These 8-period loans have a fixed contract rate and are not marketable. Advertising expenditures have
+                                some effect on the demand for a bank's new MORT, though not so much as for INST. Customer relationship
+                                effects are also smaller than for INST.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Government Bonds
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                The CEO may purchase new government bonds, which carry a fixed interest rate and mature in 8 periods.
+                                New bonds are purchased at par, and the bank's accountants carry bonds on the balance sheet at their
+                                acquisition cost. However, subsequent market rate changes affect bond market values. (A bond's current
+                                market value is obtained by discounting its remaining cash flows at the riskless interest rate for the
+                                corresponding time to maturity. These rates are reported in the Bond Market Report.) The CEO can sell
+                                seasoned bonds by specifying the maturity date and book value of bonds to be sold. (ProBanker provides
+                                no opportunity to purchase seasoned bonds.) The Economic Environment Report specifies the corporate
+                                tax rate on capital gains (losses) when bonds are sold before maturity.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Fixed Assets
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                The bank utilizes fixed assets (land, buildings, equipment, and furniture) to produce financial
+                                intermediation services. These assets depreciate at an exogenous rate, generating quarterly operating
+                                expenses. You cannot change the level of your bank's fixed asset stock, or its depreciation rate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Loan Loss Allowance
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionAssets">
+                            <div class="card-body">
+                                A single loan loss allowance account serves as a reserve ("contra-account") for defaults on all four loan
+                                types. Losses are charged to this account when they occur; LLA is replenished via the expense item
+                                Provision for Loan Losses (PLL).
+                                Another term for the loan loss allowance (LLA) is the "Loan Loss Reserve." Nonfinancial firms show
+                                many such reserve accounts as part of their net worth. For banks, the LLA is generally shown on the asset
+                                side of the balance sheet.
 
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Liability</h2>
+                <div class="accordion" id="accordionLiabilities">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseOne" aria-expanded="true" aria-controls="l_collapseOne">
+                                    Federal Funds Purchased (FFP)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                The CEO can borrow from other banks and financial institutions through the overnight Federal Funds
+                                market. If some purchased funds turn out to be un-needed, the bank pays a transaction cost to borrow them
+                                initially and to re-lend them in the market as FFS. (See Section 4.11.)
+                                A sound bank will pay a rate on FFP that is equal to that earned on FFS. However, as a bank's
+                                leverage increases above some threshold value, its interest rate paid on FFP may include a default risk
+                                premium. Market investors will also stop lending to a bank that appears too risky. FFP pricing and rationing
+                                are both described in Section 4.8.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseTwo" aria-expanded="false" aria-controls="l_collapseTwo">
+                                    Demand Deposits (DDR, DDC)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="l_collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                The default setting does not allow banks to pay explicit interest on any type of demand deposit account.
+                                However, ProBanker permits your Administrator to set positive interest rate ceilings on either type of
+                                demand deposit--so check your Regulatory Environment Report to see what regulations apply to your
+                                simulations.
+                                In addition to the possibility of explicit interest payments, ProBanker banks compete for demand deposit by
+                                paying implicit interest in two forms. First, you can direct advertising expenditures to either type of DD
+                                account. Second, you can vary the level of your checking-related fees to make your DD accounts more
+                                or less attractive. Lower fees elicit greater DD account balances, but your noninterest revenue will also
+                                be lower. Setting the fee rate above 100% makes DD services a profitable activity, but it reduces your
+                                available "interest free" DD balances.
+                                Both types of DD balances are positively related to the effective rate paid on them, negatively related to the
+                                level of market interest rates, and positively related to the level of GDP. DDC are more interest-elastic than
+                                DDR. Demand deposit accounts have substantial customer relationship effects, especially among retail
+                                customers. DDC balances differ from DDR in two additional ways:
+                                 DDC balances increase with the volume of corporate loans outstanding, reflecting the
+                                compensating balance arrangements that often accompany FR and FL.
+                                 DDC balances fall when the bank's leverage increases beyond some critical level, as
+                                customers fear that they will lose their uninsured funds if the bank fails. (See Section 4.8).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseThree" aria-expanded="false" aria-controls="l_collapseThree">
+                                    Negotiable Certificates of Deposit (CD)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="l_collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                Under normal circumstances CEOs may sell as many (or few) CDs as they desire, with initial maturities of
+                                1, 2 or 4 quarters. In deciding how many CDs to issue, be careful to note that old CDs "age down" as time
+                                passes: last period's 4-quarter CDs become this period's 3-quarter CDs, and so forth.
+                                Riskless CD rates for the coming quarter equal the same-maturity government bond's yield, as reported
+                                in ProBanker's end-of-quarter Bond Reports. However, a highly levered bank's actual cost of CD funds
+                                may incorporate a default premium above the riskless rate. The market also refuses to purchase CDs at any
+                                price once the bank's leverage has become sufficiently high. See Section 4.8.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFour" aria-expanded="true" aria-controls="l_collapseFour">
+                                    Passbook Saving Accounts (PASS)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                These retail savings accounts have no fixed maturity, and reputation (customer relationship) effects are
+                                very important. PASS balances are positively related to the effective rate you pay, negatively related to
+                                the effective rate paid by your Regional competitors, and negatively related to the level of government
+                                bond yields. The PASS reserve requirement and interest rate ceiling (if any) can be found in the Economic
+                                Environment Report.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFive" aria-expanded="true" aria-controls="l_collapseFive">
+                                    Retail Certificate of Deposit (RCD)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                These are fixed-rate, two-period retail accounts, also called "Retail CDs." RCD balances are sensitive to
+                                the same factors as PASS, but reputation and implicit interest (advertising) effects are less important for
+                                the RCDs. Your administrator may impose a deposit rate ceiling or reserve requirement on Retail CDs,
+                                which will be reported in the Economic Environment Report. (For technical reasons, the absence of an
+                                effective deposit rate ceiling on Retail CDs appears in the Economic Environment Report as a very large
+                                negative number.)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSix" aria-expanded="true" aria-controls="l_collapseSix">
+                                    Long-term Retail Deposits (LTRD)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                These are fixed rate, 8-period retail accounts, subject to the same economic forces as PASS and Retail CDs.
+                                Implicit interest and reputation effects are moderate -- that is, lower than for Retail CDs. Your administrator
+                                may impose a deposit rate ceiling or reserve requirement for LTRD accounts, which will be noted in the
+                                Economic Environment Report.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSeven" aria-expanded="true" aria-controls="l_collapseSeven">
+                                    Discount Window Advances (DWA)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                ProBanker chooses this amount to balance the balance sheet if your other liabilities are insufficient to fund
+                                the assets you have purchased. The bank pays interest at a rate above its rate on federal funds borrowed
+                                (FFP). (Recall that the FFP rate can include a default risk premium for a highly leveraged bank.) This
+                                penalty rate gives the CEO an incentive to forecast balance sheet positions carefully each period. Compute
+                                the DWA's rate premium from information on your Full Balance Sheet Report: subtract the rate you paid on
+                                FFP from the rate paid on DWA.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseEight" aria-expanded="true" aria-controls="l_collapseEight">
+                                    Net Worth (NW)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionLiabilities">
+                            <div class="card-body">
+                                Owner's paid-in capital and retained earnings determine the bank's level of equity capital. Higher dividend
+                                payments reduce NW, while lower dividends or (naturally) higher profits raise it. The CEO can also change
+                                Net Worth by selling new stock or repurchasing stock from the open market. Section 4.10 describes how the
+                                market values bank shares. The Net Worth account must fulfill the capital adequacy regulations, which are
+                                described in Section 4.9.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 
 
 </html>

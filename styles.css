@@ -134,3 +134,14 @@ section {
     border-left: none;
     height: 70vh;
 }
+
+/* Paragraph content */
+p{
+    text-align: justify;
+}
+
+/* Video Border */
+.video-class{
+    margin: 0 auto;
+    border: 10px outset #ddd;
+}
