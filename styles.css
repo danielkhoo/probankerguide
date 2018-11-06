@@ -135,9 +135,20 @@ section {
     height: 70vh;
 }
 
+.decisiontab{
+   overflow-y: scroll;
+}
+
 /* Paragraph content */
 p{
     text-align: justify;
+}
+
+/* Table content */
+table, th, td {
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 13px;
 }
 
 /* Video Border */
