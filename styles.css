@@ -4,11 +4,43 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'NexaBold'; /*a name to be used later*/
+    src: url('font/NexaBold.otf'); /*URL to font*/
+}
+
+.sen1Image{
+  background-image: url('img/8.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+h1{
+    font-family: 'NexaBold';
+    color: #204070;
+    font-size: 100px;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("img/8.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sidebar {
     position: fixed;
     width: 200px;
     height: 100%;
-    background: #000000;
+    background: #204070;
 }
 #sideNavItem{
     color: #f1f1f1;
@@ -17,7 +49,7 @@
     text-transform: uppercase;
 }
 #sideNavItem a:hover{
-    background: #4D4D4D;
+    background:  #3363aa;
 }
 #sideNavItem a:link, a:visited {
     padding: 15px 20px 10px 0;
@@ -28,7 +60,7 @@
 }
 
 .active {
-	background-color: #1B998B;
+	background-color: #3363aa;
 	text-decoration: none;
     line-height: 30px;
 }
@@ -83,7 +115,7 @@ section {
   /* The progress bar (scroll indicator) */
   .progress-bar {
     height: 8px;
-    background: #1B998B;
+    background: #FF9B00;
     width: 0%;
   }
   /*  ===============  Scrollbar  ===============  */
