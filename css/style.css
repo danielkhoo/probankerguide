@@ -129,6 +129,10 @@ section {
 .sectionDark {
     color: #f1f1f1;
 }
+
+.sectionDark h1 {
+	color: #EDDDD4;
+}
   /*  ===============  Scrollbar  ===============  */
   .header {
     position: fixed;

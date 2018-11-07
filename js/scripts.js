@@ -23,15 +23,15 @@ function isScrolledIntoView(elem)
 }
 
 $(window).scroll(function() {
-  if (isScrolledIntoView("#section1")) { window.history.pushState("state", "title", "#section1"); return;	}
-  if (isScrolledIntoView("#section2")) { window.history.pushState("state", "title", "#section2");	return; }
-  if (isScrolledIntoView("#section3")) { window.history.pushState("state", "title", "#section3");	return; }
-  if (isScrolledIntoView("#section4")) { window.history.pushState("state", "title", "#section4"); return; }
-  if (isScrolledIntoView("#section5")) { window.history.pushState("state", "title", "#section5"); return; }
-  if (isScrolledIntoView("#section6")) { window.history.pushState("state", "title", "#section6"); return; }
-  if (isScrolledIntoView("#section7")) { window.history.pushState("state", "title", "#section7"); return; }
-  if (isScrolledIntoView("#section8")) { window.history.pushState("state", "title", "#section8"); return; }
-  if (isScrolledIntoView("#section9")) { window.history.pushState("state", "title", "#section9"); return; }
+  if (isScrolledIntoView("#section1")) { window.history.pushState("state", "title", "#start"); return;	}
+  if (isScrolledIntoView("#section2")) { window.history.pushState("state", "title", "#welcome"); return; }
+  if (isScrolledIntoView("#section3")) { window.history.pushState("state", "title", "#gameplay"); return; }
+  if (isScrolledIntoView("#section4")) { window.history.pushState("state", "title", "#learning"); return; }
+  if (isScrolledIntoView("#section5")) { window.history.pushState("state", "title", "#gamemodes"); return; }
+  if (isScrolledIntoView("#section6")) { window.history.pushState("state", "title", "#decisions"); return; }
+  if (isScrolledIntoView("#section7")) { window.history.pushState("state", "title", "#teamwork"); return; }
+  if (isScrolledIntoView("#section8")) { window.history.pushState("state", "title", "#balancesheet"); return; }
+  if (isScrolledIntoView("#section9")) { window.history.pushState("state", "title", "#notes"); return; }
 });
 
 function openCity(evt, cityName) {
