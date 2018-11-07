@@ -9,11 +9,6 @@
     src: url('font/NexaBold.otf'); /*URL to font*/
 }
 
-.sen1Image{
-  background-image: url('img/8.jpg');
-  background-size: cover;
-  position: relative;
-}
 
 h1{
     font-family: 'NexaBold';
@@ -66,8 +61,8 @@ h1{
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
+  /*  background-position: left;
+    background-repeat: no-repeat;*/
     background-size: cover;
 }
 
