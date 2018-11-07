@@ -18,6 +18,44 @@ $("#sec1_butt").click(function() {
     'slow');
 });
 
+$(document).ready(function() {
+	var oldId = null;
+
+	$('.tabs-controls__link').click(function(e) {
+		e.preventDefault();
+
+		if ($(this).hasClass('tabs-controls__link--active')) {
+			return false;
+		}
+
+		var currentId = parseInt($(this).data('id'), 10);
+		$('.tabs-controls__link--active').removeClass('tabs-controls__link--active');
+		$(this).addClass('tabs-controls__link--active');
+
+		if (currentId < oldId) { // item is hidden
+			var timing = $('.board.hidden').length * 100;
+			$('.board').each(function(index) {
+				if (index > (currentId - 1 ) || index == (currentId - 1)) {
+					window.setTimeout(function() {
+						$('.board').eq(index).removeClass('hidden');
+					}, timing - (index * 100));
+				}
+			});
+		} else {
+			$('.board').each(function(index) {
+				if (index < (currentId - 1)) {
+					window.setTimeout(function() {
+						$('.board').eq(index).addClass('hidden');
+					}, index * 100);
+				}
+			});
+		}
+
+		oldId = currentId;
+	});
+});
+
+
 
 //session keeper so animation happen once for import fields
 var sec2_p1 = 1;
