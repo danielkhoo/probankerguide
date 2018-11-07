@@ -16,6 +16,14 @@ h1{
     font-size: 100px;
 }
 
+.sectionBox{
+  padding-top: 50px;
+  padding-right: 20px;
+  color: #f1f1f1;
+  font-size: 30px;
+  text-align: right;
+}
+
 .sec2_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
 .sec4_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
 
@@ -55,7 +63,7 @@ h1{
     transition: 0s
 }
 
-.parallax {
+.parallax8 {
     /* The image used */
     background-image: url("img/8.jpg");
 
@@ -68,6 +76,9 @@ h1{
     background-repeat: no-repeat;*/
     background-size: cover;
 }
+
+
+
 
 
 /*!
