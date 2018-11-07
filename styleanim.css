@@ -16,7 +16,8 @@ h1{
     font-size: 100px;
 }
 
-.overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
+.sec2_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
+.sec4_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
 
 .button {
     position: relative;
