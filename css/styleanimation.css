@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'NexaBold'; /*a name to be used later*/
-    src: url('font/NexaBold.otf'); /*URL to font*/
+    src: url('../font/NexaBold.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'NexaLight'; /*a name to be used later*/
-    src: url('font/NexaLight.otf'); /*URL to font*/
+    src: url('../font/NexaLight.otf'); /*URL to font*/
 }
 
 h1{
@@ -65,7 +65,7 @@ h1{
 
 .parallax8 {
     /* The image used */
-    background-image: url("img/8.jpg");
+    background-image: url("../img/8.jpg");
 
     /* Set a specific height */
     min-height: 500px;
