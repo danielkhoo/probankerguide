@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'NexaBold'; /*a name to be used later*/
-    src: url('font/NexaBold.otf'); /*URL to font*/
+    src: url('../font/NexaBold.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'NexaLight'; /*a name to be used later*/
-    src: url('font/NexaLight.otf'); /*URL to font*/
+    src: url('../font/NexaLight.otf'); /*URL to font*/
 }
 
 h1{
@@ -16,7 +16,16 @@ h1{
     font-size: 100px;
 }
 
-.overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
+.sectionBox{
+  padding-top: 50px;
+  padding-right: 20px;
+  color: #f1f1f1;
+  font-size: 30px;
+  text-align: right;
+}
+
+.sec2_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
+.sec4_vid1overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
 
 .button {
     position: relative;
@@ -54,9 +63,9 @@ h1{
     transition: 0s
 }
 
-.parallax {
+.parallax8 {
     /* The image used */
-    background-image: url("img/8.jpg");
+    background-image: url("../img/8.jpg");
 
     /* Set a specific height */
     min-height: 500px;
@@ -67,6 +76,9 @@ h1{
     background-repeat: no-repeat;*/
     background-size: cover;
 }
+
+
+
 
 
 /*!
@@ -1516,8 +1528,8 @@ h1{
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
   }
 
   to {
@@ -1530,8 +1542,8 @@ h1{
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
   }
 
   to {

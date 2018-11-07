@@ -1,4 +1,5 @@
-@import url("styleanim.css");
+@import url("styleanimation.css");
+@import url("styletab.css");
 
 *{
   -webkit-box-sizing: border-box;
@@ -168,11 +169,19 @@ section {
 
 /* Style the tab */
 .tab {
+<<<<<<< HEAD:styles.css
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
   height: 70vh;
+=======
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #EBF5DF;
+    width: 30%;
+    height: 70vh;
+>>>>>>> ba776a07abb2f09c2c0bb70e64691f1b46646169:css/style.css
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -191,16 +200,25 @@ section {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+<<<<<<< HEAD:styles.css
   background-color: #ddd;
+=======
+    background-color: #BAD4AA;
+>>>>>>> ba776a07abb2f09c2c0bb70e64691f1b46646169:css/style.css
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
+<<<<<<< HEAD:styles.css
   background-color: #ccc;
+=======
+    background-color: #BAD4AF;
+>>>>>>> ba776a07abb2f09c2c0bb70e64691f1b46646169:css/style.css
 }
 
 /* Style the tab content */
 .tabcontent {
+<<<<<<< HEAD:styles.css
   display:none;
   float: left;
   padding: 0px 12px;
@@ -208,6 +226,17 @@ section {
   width: 70%;
   border-left: none;
   height: 70vh;
+=======
+    display:none;
+    background-color: #EBF5DF;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 70vh;
+    color: black;
+>>>>>>> ba776a07abb2f09c2c0bb70e64691f1b46646169:css/style.css
 }
 
 .decisiontab{
