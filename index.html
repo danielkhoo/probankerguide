@@ -81,16 +81,16 @@
                         <h1 id="sec1_h1">The Ultimate Guide to ProBanker</h1>
                         <h2 id="sec1_h2">Strategy, tactics and a quick reference guide to help your bank become profitable.</h2>
                         <br></br>
-                            <button id="sec1_butt" class="button" onclick="location.href='#section2';">Get Started</button>
+                            <button id="sec1_butt" class="button">Get Started</button>
                     </div>
             </section>
 
-            <section id="section2" style="background: #EDDDD4;">
-                <h1>Welcome</h1>
+            <section id="section2" class="section2" style="background: #fd8552;">
+                <h1 id="sec2_h1">Welcome</h1>
 				<hr style="border: 1px solid black;">
                 <div class="row">
-                    <div class="col-md-5">
-                        <p>In this trimester, you will be using an interactive simulation software, ProBanker, which is
+                    <div class="col-md-5" id="sec2_para1">
+                        <p id="sec2_p1">In this trimester, you will be using an interactive simulation software, ProBanker, which is
                             <b>TOTALLY DIFFERENT</b>
                             from your normal classroom setting! Students will be working in teams, to input a range of
                             decisions which will ultimately affect the next decisions made for the team, and...
@@ -100,23 +100,23 @@
                             Prof. Pear has to tell you guys!
                             <br><br>
                             Good Luck!
-						</p>
-
+				                      </p>
                     </div>
                     <div class="col-md-5">
-                        <iframe class="video-class" width="550" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
+                        <iframe id="sec2_vid1" class="video-class" width="550" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
+                        <div id="sec2_vid1div1" class="overlay"></div>
                     </div>
                 </div>
             </section>
 
-            <section id="section3" class="sectionDark" style="background: #197278;">
-                <h1>Gameplay</h1>
+            <section id="section3" class="sectionDark" style="background: #82b35f;">
+                <h1 id="sec3_h1">Gameplay</h1>
 				<hr style="border: 1px solid white;">
                 <p>The height is set to 90vh, that means 90% height.</p>
             </section>
 
-            <section id="section4" class="sectionDark" style="background: #283D3B;">
-                <h1>Learning</h1>
+            <section id="section4" class="sectionDark" style="background: #fd8552;">
+                <h1 id="sec4_h1">Learning</h1>
 				<hr style="border: 1px solid white;">
                 <div class="row">
                     <div class="col-md-8">
@@ -133,9 +133,9 @@
                 <!--Can add the Students' Learning Feedback Video here!! In small thumbnail, onclick to open a modal video?-->
             </section>
 
-            <section id="section5" style="background: #EDDDD4;">
-                <h1>Game Modes</h1>
-                <p><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
+            <section id="section5" style="background: #82b35f;">
+                <h1 id="sec5_h1">Game Modes</h1>
+                <p id="sec5_p1"><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
                 <hr style="border: 1px solid black;">
                 <div class="row">
                     <div class="col-md-6">
@@ -170,8 +170,8 @@
                 </div>
             </section>
 
-            <section id="section6" class="sectionDark" style="background: #197278;">
-                <h1>Decisions</h1>
+            <section id="section6" class="sectionDark" style="background: #fd8552;">
+                <h1 id="sec6_h1">Decisions</h1>
 				<hr style="border: 1px solid white;">
                 <p>The height is set to 90vh, that means 90% height.</p>
                 <!-- Bank treasury
@@ -319,8 +319,8 @@
                 </div>
             </section>
 
-            <section id="section7" class="sectionDark"	style="background: #283D3B;">
-                <h1>Teamwork</h1>
+            <section id="section7" class="sectionDark"	style="background: #82b35f;">
+                <h1 id="sec7_h1">Teamwork</h1>
 				<hr style="border: 1px solid white;">
                 <div class="row">
                     <div class="col-md-5">
@@ -336,8 +336,8 @@
                 </div>
             </section>
 
-            <section id="section8" style="background: #EDDDD4;">
-                <h1>Balance Sheet</h1>
+            <section id="section8" style="background: #fd8552;">
+                <h1 id="sec8_h1">Balance Sheet</h1>
 				<hr style="border: 1px solid black;">
                 <h2>Assets</h2>
                 <div class="accordion" id="accordionAssets">
@@ -715,9 +715,12 @@
 
 
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script type="text/javascript" src="jquery.transit.js"></script>
+        <script type="text/javascript" src="jquery.textFx.js"></script>
         <script src="anime.min.js"></script>
         <script src="anime.js"></script>
     </body>
