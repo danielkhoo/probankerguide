@@ -7,216 +7,322 @@
 }
 
 @font-face {
-    font-family: 'NexaBold'; /*a name to be used later*/
-    src: url('font/NexaBold.otf'); /*URL to font*/
+  font-family: 'NexaBold'; /*a name to be used later*/
+  src: url('font/NexaBold.otf'); /*URL to font*/
 }
 
 
 h1{
-    font-family: 'NexaBold';
-    color: #204070;
-    font-size: 100px;
+  font-family: 'NexaBold';
+  color: #204070;
+  font-size: 100px;
 }
 
 .button {
-    position: relative;
-    background-color: #fe8551;
-    border: none;
-    font-size: 15px;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  background-color: #fe8551;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .button:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
 }
 
 .button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("img/8.jpg");
+  /* The image used */
+  background-image: url("img/8.jpg");
 
-    /* Set a specific height */
-    min-height: 500px;
+  /* Set a specific height */
+  min-height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   /*  background-position: left;
-    background-repeat: no-repeat;*/
-    background-size: cover;
+  background-repeat: no-repeat;*/
+  background-size: cover;
 }
 
 .sidebar {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background: #204070;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #204070;
 }
 #sideNavItem{
-    color: #f1f1f1;
-    font-size: 16px;
-    text-align: right;
-    text-transform: uppercase;
+  color: #f1f1f1;
+  font-size: 16px;
+  text-align: right;
+  text-transform: uppercase;
 }
 #sideNavItem a:hover{
-    background:  #3363aa;
+  background:  #3363aa;
 }
 #sideNavItem a:link, a:visited {
-    padding: 15px 20px 10px 0;
-    display: block;
-    width: 200px;
-    text-decoration: inherit;
-    color: inherit;
+  padding: 15px 20px 10px 0;
+  display: block;
+  width: 200px;
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .active {
-	background-color: #3363aa;
-	text-decoration: none;
-    line-height: 30px;
+  background-color: #3363aa;
+  text-decoration: none;
+  line-height: 30px;
 }
 
 .content {
-    margin-left: 200px;
-    height: auto;
-    width: auto;
-    position: relative;
-    overflow: auto;
-    z-index: 1;
+  margin-left: 200px;
+  height: auto;
+  width: auto;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
 }
 
 .content p, ul, li, a {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 /* .info {
-    width: 1440px;
-    height: 1300px;
-    position: relative;
-    background: #f55;
+width: 1440px;
+height: 1300px;
+position: relative;
+background: #f55;
 } */
 
 section {
-    width: 100%;
-    display: table;
-    margin: 0;
-    padding: 90px;
-    background-color: #EB5160;
-    height: 90vh;
-  }
-.sectionDark {
-    color: #f1f1f1;
+  width: 100%;
+  display: table;
+  margin: 0;
+  padding: 90px;
+  background-color: #EB5160;
+  height: 90vh;
+  color: #000000;
 }
-  /*  ===============  Scrollbar  ===============  */
-  .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-  }
 
-  /* The progress container (grey background) */
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-  }
+.sectionLight li {
+  color: black;
+}
 
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-    height: 8px;
-    background: #FF9B00;
-    width: 0%;
-  }
-  /*  ===============  Scrollbar  ===============  */
+.sectionLight p, i{
+  color: #000000;
+}
+
+.sectionDark h1, p, ul, li, a{
+  color: #f1f1f1;
+}
+
+/*  ===============  Scrollbar  ===============  */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #FF9B00;
+  width: 0%;
+}
+/*  ===============  Scrollbar  ===============  */
 
 
-  * {box-sizing: border-box}
+* {box-sizing: border-box}
 
 /* Style the tab */
 .tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 30%;
-    height: 70vh;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 70vh;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display:none;
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 70vh;
+  display:none;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 70vh;
 }
 
 .decisiontab{
-   overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 /* Paragraph content */
 p{
-    text-align: justify;
+  text-align: justify;
 }
 
 /* Table content */
 table, th, td {
-    border: 1px solid white;
-    padding: 5px;
-    font-size: 13px;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 13px;
 }
 
 /* Video Border */
 .video-class{
-    margin: 0 auto;
-    border: 10px outset #ddd;
+  margin: 0 auto;
+  border: 10px outset #ddd;
+}
+
+/* Sticky Note Effect for Game Notes */
+.snote{
+  max-width:100%;
+}
+
+.snote h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+
+.snote ul,li{
+  list-style:none;
+}
+
+.snote ul{
+  padding:3em;
+}
+
+.snote ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:auto;
+  width:auto;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+.snote ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+
+.snote ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+
+.snote ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  background:#fcf;
+}
+
+.snote ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.snote ul li{
+  margin:1em;
+  float:left;
+}
+
+.snote ul li h2{
+  font-size:160%;
+  font-weight:bold;
+  padding-bottom:0px;
+  font-family:Oswald;
+  text-align:center;
+  color:#000;
+}
+
+.snote ul li p{
+  font-family:Oswald;
+  font-size:120%;
+  color:#000;
 }
