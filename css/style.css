@@ -57,7 +57,7 @@ h1{
 
 .parallax {
     /* The image used */
-    background-image: url("img/8.jpg");
+    background-image: url("../img/8.jpg");
 
     /* Set a specific height */
     min-height: 500px;
