@@ -72,6 +72,8 @@ var sec2_p1 = 1;
 var sec2_vid1 = 1;
 var sec4_p1 = 1;
 var sec4_vid1 = 1;
+var sec7_p1 = 1;
+var sec7_vid1 = 1;
 
 $('.sec2_vid1overlay').click(function(){
   $('#sec2_vid1').removeClass('animated pulse infinite');
@@ -83,6 +85,12 @@ $('.sec4_vid1overlay').click(function(){
   $('#sec4_vid1').removeClass('animated pulse infinite');
   $('#sec4_vid1div1').removeClass('sec4_vid1overlay');
   sec4_vid1 = 0;
+
+});
+$('.sec7_vid1overlay').click(function(){
+  $('#sec7_vid1').removeClass('animated pulse infinite');
+  $('#sec7_vid1div1').removeClass('sec7_vid1overlay');
+  sec7_vid1 = 0;
 
 });
 
@@ -97,15 +105,15 @@ $(window).scroll(function() {
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
     $('#sec9_h1').removeClass('animated bounceInLeft');
-    if (sec2_p1 === 1) {
-      $('#sec2_p1').textFx({
-        type: 'fadeIn',
-        iChar: 10,
-        iAnim: '150'
-        //Fades in
-      });
-      sec2_p1 = 0;
-    }
+    // if (sec2_p1 === 1) {
+    //   $('#sec2_p1').textFx({
+    //     type: 'fadeIn',
+    //     iChar: 10,
+    //     iAnim: '150'
+    //     //Fades in
+    //   });
+    //   sec2_p1 = 0;
+    // }
     if (sec2_vid1 === 1) {
       $('#sec2_vid1').addClass('animated pulse infinite');
     }
@@ -130,15 +138,6 @@ $(window).scroll(function() {
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
     $('#sec9_h1').removeClass('animated bounceInLeft');
-    if (sec4_p1 === 1) {
-      $('#sec4_p1').textFx({
-        type: 'fadeIn',
-        iChar: 10,
-        iAnim: '150'
-        //Fades in
-      });
-      sec4_p1 = 0;
-    }
     if (sec4_vid1 === 1) {
       $('#sec4_vid1').addClass('animated pulse infinite');
     }
@@ -176,6 +175,9 @@ $(window).scroll(function() {
     $('#sec7_h1').addClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
     $('#sec9_h1').removeClass('animated bounceInLeft');
+    if (sec7_vid1 === 1) {
+      $('#sec7_vid1').addClass('animated pulse infinite');
+    }
     return;
   } else if (isScrolledIntoView("#section8")) {
     $('#sec2_h1').removeClass('animated bounceInLeft');
