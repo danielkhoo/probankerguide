@@ -73,8 +73,8 @@
           </ul>
 
           <div class="sectionBox">
-            <div><span>Assets </span>   <img src="img/greenup.png" > </div>
-            <div><span>Liability </span>   <img src="img/redup.png" > </div>
+            <div><span>Assets </span>   <img id="section_assetarrow" src="img/greenup.png" > </div>
+            <div><span>Liability </span>   <img id="section_liabilityarrow" src="img/redup.png" > </div>
           </div>
         </div>
 
@@ -95,34 +95,36 @@
           </section>
 
           <section id="section2" style="background: #fd8552;">
-            <h1>Welcome</h1>
+            <h1 id="sec2_p1">Welcome</h1>
 		        <hr style="border: 1px solid black;">
             <div class="row">
-              <div class="col-md-5">
-                <p>In this trimester, you will be using an interactive simulation software, ProBanker, which is <b>TOTALLY DIFFERENT</b> from your normal classroom setting! Students will be working in teams, to input a range of decisions which will ultimately affect the next decisions made for the team, and... <b>THE WHOLE CLASS!</b>
+              <div id="sec2_para1" class="col-md-5">
+                <p id="sec2_p1">In this trimester, you will be using an interactive simulation software, ProBanker, which is <b>TOTALLY DIFFERENT</b> from your normal classroom setting! Students will be working in teams, to input a range of decisions which will ultimately affect the next decisions made for the team, and... <b>THE WHOLE CLASS!</b>
                   <br><br>You will be using this tool <b>VERY OFTEN</b>. So.... watch the introductory video to find out what Prof. Pear has to tell you guys!
                   <br><br> Good Luck!
                 </p>
               </div>
               <div class="col-md-5">
-                <iframe class="video-class" width="550" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
+                <iframe id="sec2_vid1" class="video-class" width="550" height="360" src="https://www.youtube.com/embed/dz_1juRGdLA"></iframe>
+                <div id="sec2_vid1div1" class="sec2_vid1overlay"></div>
               </div>
             </div>
           </section>
 
           <section id="section3" class="sectionDark" style="background: white;">
-            <h1>Gameplay</h1>
+            <h1 id="sec3_h1">Gameplay</h1>
             <hr style="border: 1px solid black;">
           </section>
 
           <section id="section4" class="sectionDark" style="background: #fd8552;">
-            <h1>Learning</h1>
+            <h1 id="sec4_h1">Learning</h1>
 				    <hr style="border: 1px solid black;">
             <div class="row">
               <div class="col-md-8">
-                <iframe class="video-class" width="550" height="360" src="https://www.youtube.com/embed/pep2NhgdZ6E"></iframe>
+                <iframe id="sec4_vid1" class="video-class" width="550" height="360" src="https://www.youtube.com/embed/pep2NhgdZ6E"></iframe>
+                <div id="sec4_vid1div1" class="sec4_vid1overlay"></div>
               </div>
-              <div class="col-md-4">
+              <div id="sec4_p1" class="col-md-4">
                   <p>"Why do we need to play this game? What should we be focusing on? How do we get the bonus / reward marks? If we lose money in the game, will marks be deducted? How do we win this game?"
                     <br><br>Watch the video to answer ALL these questions! *psst* TIPS is given in this video!
                   </p>
@@ -132,11 +134,11 @@
           </section>
 
           <section id="section5" style="background: white;">
-            <h1>Game Modes</h1>
-            <p><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
+            <h1 id="sec5_h1">Game Modes</h1>
+            <p id="sec5_p1"><i>ProBanker has two game modes, namely; Autosim mode and Competitive mode.</i></p>
             <hr style="border: 1px solid black;">
             <div class="row">
-              <div class="col-md-6">
+              <div id="sec5_card1" class="col-md-6">
                 <h2>Autosim Mode</h2>
                 <ul>
                   <li>Management team selects a template and creates a "game"</li>
@@ -146,7 +148,7 @@
                   <li>Costs, revenues, loan demands, and deposit supplies resulting from their decisions are available in reports.</li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              <div id="sec5_card2" class="col-md-6">
                 <h2>Competitive Mode</h2>
                 <ul>
                   <li>Administrator selects starting financial condition for all banks in the "economy". Each management team controls a single bank.</li>
@@ -170,7 +172,7 @@
 
           
           <section id="section6" class="sectionDark" style="background: #fd8552;">
-            <h1>Decisions</h1>
+            <h1 id="sec6_h1">Decisions</h1>
             <hr style="border: 1px solid black;">
             <!-- Bank treasury
             Assets - other
@@ -185,7 +187,7 @@
                     <button class="tablinks" onclick="openCity(event, 'tab4')">Liabilities - Deposits</button>
                     <button class="tablinks" onclick="openCity(event, 'tab5')">Bank - General</button>
                 </div>
-                <div id="tab1" class="tabcontent decisiontab" style="display: block;">
+                <div id="tab1" class="tabcontent decisiontab animated fadeInLeft" style="display: block;">
                   <h3>Interbank Call Money Lent (FFS)</h3>
                   <p>Banks with excess reserve balances can lend to other banks. 
                     When Call Money is "Lent" the selling bank has an asset and the "Borrowing" bank has a liability. 
@@ -211,7 +213,7 @@
                       Riskless CD rates for the coming quarter equal the same-maturity government bond's yield, as reported in ProBanker's end-of-quarter Bond Reports. However, a highly levered bank's actual cost of CD funds may incorporate a default premium above the riskless rate. The market also refuses to purchase CDs at any price once the bank's leverage has become sufficiently high.
                   </p>
                 </div>
-                <div id="tab2" class="tabcontent decisiontab">
+                <div id="tab2" class="tabcontent decisiontab animated fadeInLeft">
                   <h3>New 8-quarter Government Bonds to Purchase</h3>
 <p>
 These are fixed-coupon government bonds. New bonds are purchased at par, but subsequent market rate changes affect bond market values. 
@@ -253,7 +255,7 @@ If your allocation turns out to be too large, the extra reserve balances may be 
 "Excess Reserve Balances (at other commercial banks)."
 </p>
                 </div>
-                <div id="tab3" class="tabcontent decisiontab">
+                <div id="tab3" class="tabcontent decisiontab animated fadeInLeft">
                   <p>For <b>all</b> loan types, the volume of business you attract
                     varies inversely with the interest rate you charge.</p>
                   <table style="width:100%">
@@ -318,7 +320,7 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                   </table>
 
                 </div>
-                <div id="tab4" class="tabcontent decisiontab">
+                <div id="tab4" class="tabcontent decisiontab animated fadeInLeft">
                   <h3>Demand deposits (DD)</h3>
                   <h4>Corporate (DDC)</h4>
                   <p><i class="glyphicon glyphicon-arrow-up"></i> fear,
@@ -378,14 +380,15 @@ If your allocation turns out to be too large, the extra reserve balances may be 
         </section>
 
           <section id="section7" class="sectionDark"	style="background: white;">
-            <h1>Teamwork</h1>
+            <h1 id="sec7_h1">Teamwork</h1>
 				    <hr style="border: 1px solid black;">
             <div class="row">
               <div class="col-md-5">
                 <p>How can your friend, team members be a BIG HELP to you? <br><br>In this video, Prof. Pear has provided suggestions on what you can do FROM THE START of the trimester!</p>
               </div>
               <div class="col-md-5">
-                <iframe class="video-class" width="550" height="360" src="https://www.youtube.com/embed/OJ5w7N6uYpc"></iframe>
+                <iframe id="sec7_vid1" class="video-class" width="550" height="360" src="https://www.youtube.com/embed/OJ5w7N6uYpc"></iframe>
+                <div id="sec7_vid1div1" class="sec4_vid1overlay"></div>
               </div>
             </div>
           </section>
@@ -393,60 +396,50 @@ If your allocation turns out to be too large, the extra reserve balances may be 
           
 
           <section id="section8" style="background: #fd8552;">
-            <h1>Balance Sheet</h1>
+            <h1 id="sec8_h1">Balance Sheet</h1>
             <hr style="border: 1px solid black;">
             <h2>Assets</h2>
             <div class="accordion" id="accordionAssets">
               <div class="card">
-                <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Required Reserves</button>
+                    <button id="sec8_accordassets" class="btn btn-primary btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Required Reserves</button>
                   </h5>
-                </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionAssets">
                   <div class="card-body">Banks must keep reserve balances at the Federal Reserve Bank, in proportion to their outstanding deposit liabilities. (The Economic Environment Report describes required reserve ratios, which can change over the course of your simulation.) The dollar volume of Required Reserves cannot be known exactly when you are making your decisions, because it depends on your realized deposit balances. Players should estimate their deposit balances, and choose an Initial Reserve Allocation sufficient to satisfy anticipated reserve requirements. If your bank turns out to need reserves in excess of your Initial Reserve Allocation, ProBanker will automatically reduce Federal Funds sold (FFS) or borrow at the Discount Window. Any funds transferred from the latter sources to fulfill RR are assessed a proportional transaction cost of 0.5% (Note: this cost is not an annualized rate and your instructor may choose to increase the cost).
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Excess Reserve Balances</button>
+                    <button  id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Excess Reserve Balances</button>
                   </h5>
-                </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAssets">
                   <div class="card-body">If your "Initial Reserve Allocation" exceeds the level of required reserves, the excess will be held as deposits due from other banks. Although U.S. banks may not (by law) pay explicit interest on these balances, they will perform free services in proportion to the balances you hold with them. These free services frequently relate to check clearing, and hence lower the cost of servicing your demand deposit customers. ER balances earn implicit interest at a rate equal to about 90% (more precisely, 1.0 minus the DDC reserve requirement) of the period's average risk-free federal funds rate. (This rate of implicit compensation for interbank demand balances assumes perfect competition for such balances.) If implicit interest earned exceeds noninterest DD operating costs, the excess is lost to the bank. ER balances incur no transaction costs.
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Interbank Call Money Lent</button>
+                    <button  id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Interbank Call Money Lent</button>
                   </h5>
-                </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAssets">
                   <div class="card-body">The CEO chooses how much to lend to other banks and financial institutions through the Federal Funds market. FFS earn an expected return equal to the riskless 90-day CD rate, which is known for certain when Bank decisions are made. However, the actual FFS rate will differ from the 90-day CD rate by a random factor that reflects unanticipated money market developments during the quarter. (Because most FFS lending has a very short maturity the average Fed Funds rate over the coming quarter cannot be known when you are making your decisions.) Your bank's ultimate FFS position also may differ from what you entered as an initial decision, because FFS balances play an important part in the process for balancing each bank's balance sheet. (Section 4.11 below provides details.)
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingFour">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Fixed-Rate Loans</button>
+                    <button  id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Fixed-Rate Loans</button>
                   </h5>
-                </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionAssets">
                   <div class="card-body">You select a contract rate to charge on these one-period corporate loans. Your bank's FR volume depends upon (among other things) the level of market interest rates, GDP, competing banks' FR rates, and customers' expected cost of your bank's floating rate loans. There is an element of short-term customer loyalty in the FR market, which makes the present volume of loans depend on past volumes. Finally, the bank can choose credit standards (the "Corporate Loan Standard" on the Decision Page) that affect default probability, operating costs, and loan volumes. (See Section 4.6.)
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingFive">
                   <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Floating-Rate Loans</button>
+                      <button id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left"type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Floating-Rate Loans</button>
                   </h5>
-                </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionAssets">
                   <div class="card-body">These two-period loans are priced as a SPREAD over an economy-wide "floating rate loan base," which is the average of the 90-day CD rate and the quarter's risk-free Federal Funds rate. A loan's SPREAD stays constant throughout its life, although the actual interest rate varies with the floating rate loan base. FL demand is inversely related to the average contract rate that customers expect to pay over the loan's two-
                       period life. (The expected FL contract rate is the average of this period's rate and the expected rate next period, given the bank's SPREAD and the forward rate implied by the government bond term structure.) FL volume is also affected by the determinants of FR.
@@ -454,44 +447,36 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingSix">
                   <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Consumer Loans</button>
+                      <button  id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Consumer Loans</button>
                   </h5>
-                </div>
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionAssets">
                   <div class="card-body">These consumer loans mature in four periods. The CEO chooses a loan rate and an (dollar) advertising level directed at the INST market. INST customers are moderately responsive to advertising. A bank's market share tends to persist through time, due to moderately strong customer relationship effects.
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingSeven">
                   <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Mortgages</button>
+                      <button  id="sec8_accordassets"  class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Mortgages</button>
                   </h5>
-                </div>
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionAssets">
                   <div class="card-body">These 8-period loans have a fixed contract rate and are not marketable. Advertising expenditures have some effect on the demand for a bank's new MORT, though not so much as for INST. Customer relationship effects are also smaller than for INST.
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingEight">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Government Bonds</button>
+                    <button  id="sec8_accordassets" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Government Bonds</button>
                   </h5>
-                </div>
                 <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionAssets">
                   <div class="card-body">The CEO may purchase new government bonds, which carry a fixed interest rate and mature in 8 periods. New bonds are purchased at par, and the bank's accountants carry bonds on the balance sheet at their acquisition cost. However, subsequent market rate changes affect bond market values. (A bond's current market value is obtained by discounting its remaining cash flows at the riskless interest rate for the corresponding time to maturity. These rates are reported in the Bond Market Report.) The CEO can sell seasoned bonds by specifying the maturity date and book value of bonds to be sold. (ProBanker provides no opportunity to purchase seasoned bonds.) The Economic Environment Report specifies the corporate tax rate on capital gains (losses) when bonds are sold before maturity.
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingNine">
                   <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Fixed Assets</button>
+                      <button  id="sec8_accordassets" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Fixed Assets</button>
                   </h5>
-                </div>
                 <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionAssets">
                   <div class="card-body">
                       The bank utilizes fixed assets (land, buildings, equipment, and furniture) to produce financial
@@ -501,11 +486,9 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingTen">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Loan Loss Allowance</button>
+                    <button  id="sec8_accordassets" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Loan Loss Allowance</button>
                   </h5>
-                </div>
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionAssets">
                   <div class="card-body">
                       A single loan loss allowance account serves as a reserve ("contra-account") for defaults on all four loan
@@ -522,13 +505,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
             <h2>Liability</h2>
             <div class="accordion" id="accordionLiabilities">
               <div class="card">
-                <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseOne" aria-expanded="true" aria-controls="l_collapseOne">
+                    <button  id="sec8_accordliability" class="btn btn-primary btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseOne" aria-expanded="true" aria-controls="l_collapseOne">
                         Federal Funds Purchased (FFP)
                     </button>
                   </h5>
-                </div>
 
                 <div id="l_collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLiabilities">
                   <div class="card-body">
@@ -543,13 +524,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseTwo" aria-expanded="false" aria-controls="l_collapseTwo">
+                    <button id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseTwo" aria-expanded="false" aria-controls="l_collapseTwo">
                         Demand Deposits (DDR, DDC)
                     </button>
                   </h5>
-                </div>
                 <div id="l_collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLiabilities">
                   <div class="card-body">
                       The default setting does not allow banks to pay explicit interest on any type of demand deposit account.
@@ -574,13 +553,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#l_collapseThree" aria-expanded="false" aria-controls="l_collapseThree">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseThree" aria-expanded="false" aria-controls="l_collapseThree">
                         Negotiable Certificates of Deposit (CD)
                     </button>
                   </h5>
-                </div>
                   <div id="l_collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLiabilities">
                     <div class="card-body">
                         Under normal circumstances CEOs may sell as many (or few) CDs as they desire, with initial maturities of
@@ -594,14 +571,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                   </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingFour">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFour" aria-expanded="true" aria-controls="l_collapseFour">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseFour" aria-expanded="true" aria-controls="l_collapseFour">
                         Passbook Saving Accounts (PASS)
                     </button>
                   </h5>
-                </div>
-
                 <div id="l_collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLiabilities">
                   <div class="card-body">
                       These retail savings accounts have no fixed maturity, and reputation (customer relationship) effects are
@@ -613,13 +587,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingFive">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseFive" aria-expanded="true" aria-controls="l_collapseFive">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseFive" aria-expanded="true" aria-controls="l_collapseFive">
                         Retail Certificate of Deposit (RCD)
                     </button>
                   </h5>
-                </div>
 
                 <div id="l_collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLiabilities">
                   <div class="card-body">
@@ -633,13 +605,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingSix">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSix" aria-expanded="true" aria-controls="l_collapseSix">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseSix" aria-expanded="true" aria-controls="l_collapseSix">
                         Long-term Retail Deposits (LTRD)
                     </button>
                   </h5>
-                </div>
 
                 <div id="l_collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionLiabilities">
                   <div class="card-body">
@@ -651,13 +621,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingSeven">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseSeven" aria-expanded="true" aria-controls="l_collapseSeven">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#l_collapseSeven" aria-expanded="true" aria-controls="l_collapseSeven">
                         Discount Window Advances (DWA)
                     </button>
                   </h5>
-                </div>
 
                 <div id="l_collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionLiabilities">
                   <div class="card-body">
@@ -671,13 +639,11 @@ If your allocation turns out to be too large, the extra reserve balances may be 
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingEight">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#l_collapseEight" aria-expanded="true" aria-controls="l_collapseEight">
+                    <button  id="sec8_accordliability" class="btn btn-primary collapsed btn-lg btn-block text-left"" type="button" data-toggle="collapse" data-target="#l_collapseEight" aria-expanded="true" aria-controls="l_collapseEight">
                         Net Worth (NW)
                     </button>
                   </h5>
-                </div>
 
                 <div id="l_collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionLiabilities">
                   <div class="card-body">
@@ -693,7 +659,7 @@ If your allocation turns out to be too large, the extra reserve balances may be 
           </section>
 
           <section id="section9" class="sectionDark" style="background: white;">
-            <h1>Notes</h1>
+            <h1 id="sec9_h1">Notes</h1>
             <hr style="border: 1px solid black;">
             <div class="snote">
               <ul>
