@@ -57,6 +57,16 @@ $(document).ready(function() {
 
 
 
+function assetsLable(){
+  $("#section_assetarrow").attr("src", "img/greenup.png");
+  $("#section_liabilityarrow").attr("src", "img/greendown.png");
+}
+
+function liabilityLable(){
+  $("#section_assetarrow").attr("src", "img/reddown.png");
+  $("#section_liabilityarrow").attr("src", "img/redup.png");
+}
+
 //session keeper so animation happen once for import fields
 var sec2_p1 = 1;
 var sec2_vid1 = 1;
@@ -86,6 +96,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
     if (sec2_p1 === 1) {
       $('#sec2_p1').textFx({
         type: 'fadeIn',
@@ -108,6 +119,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
     return;
   } else if (isScrolledIntoView("#section4")) {
     $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -117,6 +129,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
     if (sec4_p1 === 1) {
       $('#sec4_p1').textFx({
         type: 'fadeIn',
@@ -138,6 +151,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
 
     $('#sec5_card1').addClass('animated bounce');
     $('#sec5_card2').addClass('animated bounce');
@@ -151,6 +165,7 @@ $(window).scroll(function() {
     $('#sec6_h1').addClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
     return;
   } else if (isScrolledIntoView("#section7")) {
     $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -160,6 +175,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').addClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
     return;
   } else if (isScrolledIntoView("#section8")) {
     $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -169,6 +185,17 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').addClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
+    return;
+  }else if (isScrolledIntoView("#section9")) {
+    $('#sec2_h1').removeClass('animated bounceInLeft');
+    $('#sec3_h1').removeClass('animated bounceInLeft');
+    $('#sec4_h1').removeClass('animated bounceInLeft');
+    $('#sec5_h1').removeClass('animated bounceInLeft');
+    $('#sec6_h1').removeClass('animated bounceInLeft');
+    $('#sec7_h1').removeClass('animated bounceInLeft');
+    $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').addClass('animated bounceInLeft');
     return;
   }else {
     $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -178,6 +205,7 @@ $(window).scroll(function() {
     $('#sec6_h1').removeClass('animated bounceInLeft');
     $('#sec7_h1').removeClass('animated bounceInLeft');
     $('#sec8_h1').removeClass('animated bounceInLeft');
+    $('#sec9_h1').removeClass('animated bounceInLeft');
   }
 
 
