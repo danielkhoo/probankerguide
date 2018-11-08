@@ -44,16 +44,6 @@ function openCity(evt, cityName) {
 }
 
 $(document).scroll(function () {
-	if (isScrolledIntoView("#section1")) { window.history.pushState("state", "title", "#start"); return;	}
-	if (isScrolledIntoView("#section2")) { window.history.pushState("state", "title", "#welcome"); return; }
-	if (isScrolledIntoView("#section3")) { window.history.pushState("state", "title", "#gameplay"); return; }
-	if (isScrolledIntoView("#section4")) { window.history.pushState("state", "title", "#learning"); return; }
-	if (isScrolledIntoView("#section5")) { window.history.pushState("state", "title", "#gamemodes"); return; }
-	if (isScrolledIntoView("#section6")) { window.history.pushState("state", "title", "#decisions"); return; }
-	if (isScrolledIntoView("#section7")) { window.history.pushState("state", "title", "#teamwork"); return; }
-	if (isScrolledIntoView("#section8")) { window.history.pushState("state", "title", "#balancesheet"); return; }
-	if (isScrolledIntoView("#section9")) { window.history.pushState("state", "title", "#notes"); return; }
-
 	var scroll_top = $(document).scrollTop();
 	var one_top = $('#section1').position().top;
 	var two_top = $('#section2').position().top;
