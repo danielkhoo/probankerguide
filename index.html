@@ -186,13 +186,73 @@
                         <button class="tablinks" onclick="openCity(event, 'tab4')">Liabilities - Deposits</button>
                         <button class="tablinks" onclick="openCity(event, 'tab5')">Bank - General</button>
                     </div>
-                    <div id="tab1" class="tabcontent decisiontab">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
+                    <div id="tab1" class="tabcontent decisiontab" style="display: block;">
+                      <h3>Interbank Call Money Lent (FFS)</h3>
+                      <p>Banks with excess reserve balances can lend to other banks. 
+                        When Call Money is "Lent" the selling bank has an asset and the "Borrowing" bank has a liability. 
+                        Most call money loans in the real world have a one-day maturity, so you should think of ProBanker as asking 
+                        you to select an average balance of FFS for your bank to hold over the coming quarter.
+                        FFS earn an expected return equal to the riskless 90-day CD rate, which is known for certain when Bank decisions 
+                        are made. However, the actual FFS rate will differ from the 90-day CD rate by a random factor that reflects 
+                        unanticipated money market developments during the quarter. (Because most FFS lending has a very short maturity 
+                        the average Fed Funds rate over the coming quarter cannot be known when you are making your decisions.) 
+                        Your bank's ultimate FFS position also may differ from what you entered, because FFS balances plays a part in balancing 
+                        the balance sheet.</p>
+                      <h3>Interbank Call Money Borrowed (FFP)</h3>
+                      <p>
+                          The CEO can borrow from other banks and financial institutions through the overnight Call Money market. If some purchased funds turn out to be un-needed, the bank pays a transaction cost to borrow them initially and to re-lend them in the market as FFS.
+                          A sound bank will pay a rate on FFP that is equal to that earned on FFS. However, as a bank's leverage increases above some threshold value, its interest rate paid on FFP may include a default risk premium. Market investors will also stop lending to a bank that appears too risky. 
+                          If your bank becomes too highly levered, uninsured lenders (FFP, Negotiable CDs) demand a higher interest rate to cover perceived default risk. Very highly levered banks will be unable to obtain all the funds they request in these markets.
+                          Unless your bank is very highly levered, you will successfully issue all the perfect market liabilities (FFP and Negotiable CDs) you specify. As your leverage increases beyond some critical value, however, you will be required to pay a default risk premium on these liabilities (see Section 4.8 and Q: A.20 above).
+                          Once the required default risk premium gets to a second critical value, investors will refuse to purchase all of the FFP or Negotiable CDs liabilities you would like to sell. At a very high leverage ratio, you will be able to sell no new uninsured claims.
+                      </p>
+                      <h3>Wholesale Deposits</h3>
+                      <p>
+                          Your bank may issue large certificate of deposit (CD) obligations to obtain loanable funds. Usually, you may issue whatever volume of new CDs you wish, in each of three maturity categories: one, two, or four quarters (see Section 4.5.2.3). The cost of CD funds depends on your firm's leverage: banks with relatively low leverage can issue CDs at the (riskless) treasury rate for bonds with the same maturity. As your bank's leverage increases beyond some threshold level, however, your required CD rate also rises (Section 4.8). The market may ration your CD issues if you have very high leverage.
+                          Riskless CD rates for the coming quarter equal the same-maturity government bond's yield, as reported in ProBanker's end-of-quarter Bond Reports. However, a highly levered bank's actual cost of CD funds may incorporate a default premium above the riskless rate. The market also refuses to purchase CDs at any price once the bank's leverage has become sufficiently high.
+                      </p>
                     </div>
                     <div id="tab2" class="tabcontent decisiontab">
-                      <h3>Paris</h3>
-                      <p>Paris is the capital of France.</p>
+                      <h3>New 8-quarter Government Bonds to Purchase</h3>
+<p>
+These are fixed-coupon government bonds. New bonds are purchased at par, but subsequent market rate changes affect bond market values. 
+(A bond's current market value is obtained by discounting its remaining cash flows at the riskless interest rate for the corresponding time to maturity.
+You may purchase only bonds with an initial maturity of 8 quarters which is the longest maturity in ProBanker's horizon. </p>
+
+
+<h3>Government Bonds to Sell</h3>
+<p>
+You select which bonds to sell by specifying their maturity date and book value. 
+The Economic Environment Report specifies the corporate tax rate on capital gains (losses) when bonds are sold before maturity.
+Having purchased some government bonds in an earlier time period, you may now wish to sell them, in order to make additional loans, 
+to reduce your bank's leverage, or to realize accrued capital gains. . Government bonds may not be sold short.</p>
+
+
+<h3>Provision for loan loss</h3>
+<p>
+Actual losses on maturing loans are charged to the Loan Loss Allowance (LLA) contra-asset account when they occur, on the first day of each simulation period. 
+LLA changes through time in the following: 
+<br><br>
+LLAt = LLAt-1 + PLLt - (Actual Losses)t
+<br><br>
+PLL is the "Provision for Loan Losses." As realized loan losses deplete the LLA, bank managers charge an expense item (PLL) each quarter to restore the allowance 
+account. Your regulator requires that you maintain a LLA equal to a fixed proportion of your current nonperforming loans. Initially, this proportion is 100%, 
+but your Administrator can change this requirement. The applicable proportion is reported near the bottom of the Economic Environment Report.
+The Provision for Loan Losses cannot be a negative number. Therefore, if you make an excessively large Provision one quarter, 
+you cannot quickly reverse it the following quarter.
+</p>
+
+
+<h3>Target Reserve for Deposits</h3>
+<p>
+By regulation, each bank must hold cash or central bank deposits equal to a proportion of its deposit account balances. 
+In ProBanker, reserve balances must be at least 10% of all demand deposits outstanding. 
+At the end of each quarter, your bank will show two types of reserves: Required Reserves(link) and Excess Reserves(link). 
+ProBanker asks you to estimate how much required reserves you will have for the coming quarter. This is your "Target Reserves for Deposits." 
+If your allocation turns out to be insufficient, ProBanker will transfer resources from other asset categories. 
+If your allocation turns out to be too large, the extra reserve balances may be used to finance investments, or they may show up as 
+"Excess Reserve Balances (at other commercial banks)."
+</p>
                     </div>
                     <div id="tab3" class="tabcontent decisiontab">
                       <p>For <b>all</b> loan types, the volume of business you attract
