@@ -59,11 +59,11 @@ $(document).ready(function() {
 
 function assetsLable(){
   $("#section_assetarrow").attr("src", "img/greenup.png");
-  $("#section_liabilityarrow").attr("src", "img/greendown.png");
+  $("#section_liabilityarrow").attr("src", "img/reddown.png");
 }
 
 function liabilityLable(){
-  $("#section_assetarrow").attr("src", "img/reddown.png");
+  $("#section_assetarrow").attr("src", "img/greendown.png");
   $("#section_liabilityarrow").attr("src", "img/redup.png");
 }
 
@@ -72,7 +72,6 @@ var sec2_p1 = 1;
 var sec2_vid1 = 1;
 var sec4_p1 = 1;
 var sec4_vid1 = 1;
-var sec7_p1 = 1;
 var sec7_vid1 = 1;
 
 $('.sec2_vid1overlay').click(function(){
