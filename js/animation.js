@@ -13,7 +13,7 @@ async function sec1() {
 sec1();
 $("#sec1_butt").click(function() {
   $('html,body').animate({
-      scrollTop: $(".section2").offset().top
+      scrollTop: $("#section2").offset().top
     },
     'slow');
 });
