@@ -65,6 +65,13 @@
         </div>
       </li>
       <li>
+        <div id="sideNavItem"><a href="#sectionDemo">
+          <i class="glyphicon glyphicon-thumbs-up"></i>
+          <i class="glyphicon glyphicon-thumbs-down"></i>
+          <span>Feedback</span></a>
+        </div>
+      </li>
+      <li>
         <div id="sideNavItem"><a href="#section9">
             <i class="glyphicon glyphicon-bookmark"></i>
             <span>Notes</span></a>
@@ -425,6 +432,7 @@
             <h3>Dividends / Number of shares to sell</h3>
             <p>These decisions are not covered in our simulations. You can ignore them.</p>
         </div>
+      </div>
     </section>
 
     <section id="section7" class="sectionDark"	style="background: white;">
@@ -785,237 +793,6 @@
       </div>
     </section>
 
-    <section id="section9" class="sectionDark" style="background: white;">
-      <h1 id="sec9_h1">Notes</h1>
-      <hr style="border: 1px solid black;">
-      <div class="snote">
-        <ul>
-          <li>
-            <a>
-              <h2>Quantity-Set Items</h2>
-              <hr />
-              <p>A security is said to trade in a "perfect market" when individual buyers and sellers can trade large
-                quantities without having a noticeable effect on the security's price. Perfect- market securities must
-                be available in large supply, and have very low default risk -- or at least have default probabilities
-                that are widely understood. A financial institution will buy and sell perfect market securities to fill
-                gaps in its balance sheet, or as a means of speculating on interest rate changes. ProBanker's
-                Quantity-Set assets and liabilities trade in perfect markets.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Federal Funds</h2>
-              <hr />
-              <p>Fed funds are short-term (usually overnight), unsecured loans between banks. Sellers (lenders) use Fed
-                funds as a marginal interest-earning investment. Fed fund purchasers (borrowers) use this source of
-                funds to finance their asset portfolios. A lender of Federal Funds carries an asset item called Federal
-                Funds Sold. The borrower shows a liability item, Federal Funds Purchased.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Advertising</h2>
-              <hr />
-              <p>You may wonder why a bank would prefer to attract customers with advertising instead of simply paying
-                a higher deposit rate or cutting its contract loan rate. The situation for banks is not unusual: why
-                does Domino's Pizza advertise, instead of trying to attract customers with just a low price? In
-                ProBanker, there are two reasons to advertise. </p>
-              <p>First, banks were historically limited (by Regulation Q) in their ability to pay market rates on some
-                types of deposits. In place of explicit interest, they competed by offering convenient offices and long
-                banking hours, free gifts, etc. In the United States, Reg Q was mostly eliminated by 1986. Now only
-                demand deposits (may) retain a deposit rate ceiling.</p>
-              <p>Second, banks advertise because some implicit compensation may be more valuable to customers than the
-                same expenditure on explicit interest. In ProBanker, customers always respond to higher advertising
-                expenditures, although at a diminishing rate. For some types of accounts and over a limited range,
-                advertising may be more highly valued than explicit interest (which is taxable to the recipient).</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Competition from Primary Market</h2>
-              <hr />
-              <p>Each bank's most direct competition comes from other banks in the same competitive Region. However,
-                customers living in the Region are not required to bank with a local bank. Suppose all the bankers in a
-                Region conspired to set their deposit rates very low. Some customers would shop for better rates in
-                other geographic regions, or by looking for primary market investments like treasury bills or money
-                market mutual funds. Borrowers would behave the same way. If Regional banks offered a good deal, they'd
-                bank locally. But if all Regional loan rates were high, some potential borrowers would seek loans from
-                distant banks or their suppliers. Others could issue commercial paper (at rates determined in the
-                financial market), or liquidate some investments.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Effective Rate of Interest</h2>
-              <hr />
-              <p>Customers consider more than just the posted interest rate when evaluating the attractiveness of a
-                bank's loans and deposits. They compute an effective interest rate by combining the explicit interest
-                rate, implicit benefits from advertising expenditures (gifts, etc.) and fees charged. Customers then
-                compare effective rates across Regional competitors (and against open market alternatives) in order to
-                pick the best deal.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Passbook Balance</h2>
-              <hr />
-              <p>The passbook balance in period t is given by</p>
-              <br>
-              <p><b>PASSt = (0.3)PASS* where PASS* t + (0.7)PASSt-1</b></p>
-              <br>
-              <p>Where <b>t</b> is the long run equilibrium passbook volume (based on deposit rates, market rates, GDP,
-                and t smaller, and the constant multiplying PASSt-1 larger advertising at time t) and <b>PASSt-1</b> is
-                the prior quarter's account balance. A stronger customer relationship makes the constant multiplying
-                PASS*</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>FR Loan Transaction Cost</h2>
-              <hr />
-              <p>For FR loans, this transaction cost is computed as</p>
-              <br>
-              <p><b>TCt = M FR + S max[0, FRt - FRt-1]</b></p>
-              <br>
-              <p>Where <b>M</b> is the cost required to maintain a dollar of FR loans for one calendar quarter, <b>FR</b>
-                is the dollar volume of fixed rate loans, <b>S</b> is the cost of setting up a new dollar of FR loans,
-                and the <b>"max"</b> function denotes the maximum of the two items in square brackets.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Deposit Rate Ceilings</h2>
-              <hr />
-              <p>Your Game Administrator can impose a rate ceiling on one or more of the following five deposit
-                products (retail CDs, passbook, LTRDs, and retail and corporate demand deposits). Information about
-                prevailing rate ceilings is provided in the Economic Environment Report. ProBanker will inform you if
-                your chosen deposit rate violates an operative regulatory ceiling.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Marginal Cost of Deposits</h2>
-              <hr />
-              <p>The marginal cost of deposits is your cost of raising an additional dollar of deposit balances. The
-                marginal cost has two components. First, it includes the rate that you pay to the "marginal" (that is,
-                the additional) depositor. Second, since all depositors are paid the same rate, you must also account
-                for the additional interest paid to your "infra-marginal" (that is, previous) depositors. The marginal
-                cost of deposits is always at least as great as the deposit rate being paid.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Loanable Funds</h2>
-              <hr />
-              <p>Loanable funds are the dollars you can lend when you issue more of some liability.</p>
-              <p>Suppose that the reserve requirement on a particular deposit type is k, meaning that the bank must
-                hold cash assets equal to a fraction k of its deposit balances. The bank may lend only (1-k) dollars
-                out of each deposit dollar, even though it must pay interest on the full deposit dollar. That is,
-                "loanable funds" (LF) equal only a fraction of deposits:</p>
-              <br>
-              <p><b>LF = (1-k)D</b></p>
-              <br>
-              <p>(Loanable funds are the dollars a bank can use to purchase productive assets, after setting aside its
-                required cash reserves.) The cost of loanable funds is then given by:</p>
-              <br>
-              <p><b>RLF = Rd/(1-k)</b></p>
-              <br>
-              <p>Now, we reiterate and demonstrate the proper way to combine operating costs, advertising, and reserve
-                requirements in computing the full cost of various deposit accounts.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Marginal Revenue</h2>
-              <hr />
-              <p>The marginal revenue from a particular type of loan is the total interest revenue gained by making an
-                additional, one-dollar loan. The marginal revenue has two components. First, it includes the interest
-                you receive from the "marginal" borrower. Second, since all borrowers are charged the same loan rate,
-                you must also take into account the lower interest payments that you will receive from your
-                "infra-marginal" borrowers. The marginal revenue on loans can never be greater than the loan rate being
-                charged.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Maturity of a demand deposit</h2>
-              <hr />
-              <p>Demand deposit balances may be withdrawn at any time without advance notice or penalty, but customers
-                tend to keep positive DD balances even when market interest rates are very high. The effective maturity
-                of these DD balances depends upon how much (and how quickly) depositors adjust their average account
-                balances in response to market interest rate changes. If depositors never adjusted - that is, if they
-                kept the same account balance regardless of interest rate levels - DD would be a perpetual, fixed-rate
-                liability for the issuing bank. More realistically, average DD balances tend to move inversely with
-                market interest rates. When market rates rise, the bank loses some DD balances.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>The Basel (Basle) Capital Standards</h2>
-              <hr />
-              <p>Prior to 1988, each country imposed its own set of capital-adequacy requirements on its banks.
-                Problems arose because many banks were operating across national boundaries, and different countries
-                required different levels of capital for the same assets. Bankers therefore tended to shuffle some of
-                their assets between different subsidiaries in different countries, to generate the lowest overall
-                capital requirement. In response to this situation, about a dozen central banks began meeting under the
-                auspices of the Bank for International Settlements (which is located in Basel, Switzerland) to design a
-                common set of capital standards for major banks. The first set of capital standards was completed in
-                July 1988, and involved only the bank's credit (default) risk exposures. Banks had to set aside 8% of
-                risk adjusted assets of which 4% has to be in Tier I capital consisting mainly of equity instruments.
-                U.S. regulators fully implemented those risk-based standards by the end of 1992.
-              </p>
-              <br>
-              <p>Subsequent Basel discussions have sought to incorporate banking firms' interest rate and market risk
-                exposures into risk-based capital requirements. In August of 1995, U.S. regulators announced that they
-                would henceforth consider a bank's interest rate risk exposure when determining its "adequate" level of
-                capital. The banking agencies have incorporated "market risk" into their formal risk-based capital
-                standards, but only for very large institutions. Effective January 1, 1998, any bank or banking holding
-                company whose trading activities exceed the smaller of $1 billion or 10% of the institution's total
-                assets, had to hold capital to protect against losses in their foreign exchange, equity, interest-rate,
-                or commodity trading books. The amount of this capital can be specified by each bank’s own internal
-                model of the largest loss it expects to incur (at the 99% confidence level). This capital will be added
-                to the capital required to cover the institution's credit risk on traditional activities.
-              </p>
-              <br>
-              <p>In 2006, Basel II was adopted which added a more comprehensive approach requiring banks to satisfy
-                three pillars. Pillar 1 mandated minimum capital for credit, market and operation risk using
-                standardized or Internal Ratings-Based approach. Pillar II focused on supervision and internal
-                processes to complement the adequacy of capital while Pillar III focused on disclosure and the
-                importance of providing transparent information to the public. The financial crisis of 2008 highlighted
-                major inadequacies in the minimum capital assessments and Basel III was proposed and adopted for
-                implementation by 2019. Although it maintained the 8% overall capital, it increased the core Tier I
-                ratios to 6% and added on two more requirements; a capital conservation buffer of 2.5% and a potential
-                countercyclical capital buffer that could add another 2.5%. See www.bis.org for ongoing developments in
-                worldwide capital adequacy regulation.</p>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Caution</h2>
-              <hr />
-              <p><b>1.</b> You may be tempted to try using Autosim to "check out" the effects of Competitive decisions.
-                Don't bother. This technique fails to give representative results, because your "real" competitors are
-                unlikely to behave the same way as Autosim's pre-programmed competitors do. So don't try to flip back
-                and forth between Autosim and Competitive Games, hoping to learn what will happen in the Competitive
-                environment from an Autosim simulation. Use Autosim to learn about ProBanker, then switch over to the
-                Competitive environment permanently.</p>
-              <p><b>2.</b> If your bank becomes too highly levered, uninsured lenders (FFP, Negotiable CDs) demand a
-                higher interest rate to cover perceived default risk. Very highly levered banks will be unable to
-                obtain all the funds they request in these markets. </p>
-              <p><b>3.</b> ProBanker’s tax system is simpler than the current U.S. tax code. Specifically, ProBanker
-                has no provision for tax loss carryforwards or carrybacks. This means that if your bank runs a loss,
-                the income statement will show the associated taxes, but that entry does not influence your Net Income.</p>
-              <p><b>4.</b> The main theoretical ideas on how to apply two key concepts to your pricing decisions
-                marginal deposit cost and marginal loan revenue are discussed in ProBanker Lesson on How to Maximize
-                Bank Profits in Help. </p>
-            </a>
-          </li>
-
-
-        </ul>
-      </div>
-    </section>
-
     <section id="sectionDemo" class=".list-unstyled" >
       <h1>DEMO</h1>
       <hr style="border: 1px solid white;">
@@ -1108,6 +885,209 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="section9" class="sectionDark" style="background: white;">
+      <h1 id="sec9_h1">Notes</h1>
+      <hr style="border: 1px solid black;">
+      <div class="snote">
+        <ul>
+          <li>
+            <a>
+              <h2>ProBanker Game Modes</h2>
+              <hr />
+              <p>Don't try to flip back and forth between Autosim and Competitive Games,
+                hoping to learn what will happen in the Competitive environment from an Autosim
+                simulation because your "real" competitors are unlikely to behave the same way as
+                Autosim's pre-programmed competitors do. Use Autosim to learn about ProBanker, then
+                switch over to the Competitive environment permanently.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>ProBanker's Tax System</h2>
+              <hr />
+              <p>ProBanker’s tax system is simpler than the current U.S. tax code. Specifically,
+                ProBanker has no provision for tax loss carryforwards or carrybacks. This means that if
+                your bank runs a loss, the income statement will show the associated taxes, but that entry
+                does not influence your Net Income.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Caution</h2>
+              <hr />
+              <p>
+              <p>If your bank becomes too highly levered, uninsured lenders (FFP, Negotiable CDs) demand a
+                higher interest rate to cover perceived default risk. Very highly levered banks will be unable to
+                obtain all the funds they request in these markets. </p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Quantity-Set Items</h2>
+              <hr />
+              <p>Perfect-market security is when individual buyers and sellers can trade large quantities without having a noticeable effect on the security's price. Perfect- market securities must
+                be available in large supply, and have very low default risk -- or at least have default probabilities
+                that are widely understood. A financial institution will buy and sell perfect market securities to fill
+                gaps in its balance sheet, or as a means of speculating on interest rate changes. ProBanker's
+                Quantity-Set assets and liabilities trade in perfect markets.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Federal Funds</h2>
+              <hr />
+              <p>Fed funds are short-term (usually overnight), unsecured loans between banks.</p>
+              <p><u>Sellers (lenders)</u> use Fed funds as a marginal interest-earning investment.
+                A lender of Federal Funds carries an asset item called Federal Funds Sold.</p>
+              <p><u>Fed fund purchasers (borrowers)</u> use this source of funds to finance their asset portfolios.
+                The borrower shows a liability item, Federal Funds Purchased.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Advertising</h2>
+              <hr />
+              <p>In ProBanker, there are two reasons to advertise:</p>
+              <p><b>1.</b> Banks were historically limited in their ability to pay market rates on some types
+                of deposits. In place of explicit interest, they competed by offering convenient offices and
+                long banking hours, free gifts, etc.</p>
+              <p><b>2.</b> Banks advertise because some implicit compensation may be more valuable to customers
+                 than the same expenditure on explicit interest. In ProBanker, customers always respond to higher
+                 advertising expenditures, although at a diminishing rate. For some types of accounts and over
+                 a limited range, advertising may be more highly valued than explicit interest (which is taxable
+                 to the recipient).</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Competition from Primary Market</h2>
+              <hr />
+              <p>Each bank's most direct competition comes from other banks in the same competitive Region.
+                However, customers living in the Region are not required to bank with a local bank. If Regional
+                banks offered a good deal, they'd bank locally. But if all Regional loan rates were high or
+                deposit rates were low, some potential customers would seek loans or shop for better rates from
+                distant banks or their suppliers. </p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Effective Rate of Interest</h2>
+              <hr />
+              <p>Customers compute an effective interest rate by combining the explicit interest rate, implicit
+                benefits from advertising expenditures and fees charged. Customers then compare effective rates
+                across Regional competitors (and against open market alternatives) in order to pick the best
+                deal.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Deposit Rate Ceilings</h2>
+              <hr />
+              <p>Your Game Administrator can impose a rate ceiling on one or more of the following five deposit
+                products (retail CDs, passbook, LTRDs, and retail and corporate demand deposits). Information about
+                prevailing rate ceilings is provided in the Economic Environment Report. ProBanker will inform you if
+                your chosen deposit rate violates an operative regulatory ceiling.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Marginal Cost of Deposits</h2>
+              <hr />
+              <p>The marginal cost of deposits is your cost of raising an additional dollar of deposit balances. The
+                marginal cost has two components:</p>
+                <p><b>1.</b> It includes the rate that you pay to the "marginal" depositor.</p>
+                <p><b>2.</b> Since all depositors are paid the same rate, you must also account for the additional
+                  interest paid to your "infra-marginal" depositors. </p>
+                <p><i>The marginal cost of deposits is <u>always at least as great</u> as the deposit rate being paid.</i></p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Marginal Revenue</h2>
+              <hr />
+              <p>The marginal revenue from a particular type of loan is the total interest revenue gained by making an additional, one-dollar loan.
+                The marginal revenue has two components:</p>
+                <p><b>1.</b> It includes the interest you receive from the "marginal" borrower.</p>
+                <p><b>2.</b> Since all borrowers are charged the same loan rate, you must also take into account the lower
+                  interest payments that you will receive from your "infra-marginal" borrowers.</p>
+                <p><i>The marginal revenue on loans can <u>never be greater than</u> the loan rate being charged.</i></p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Loanable Funds</h2>
+              <hr />
+              <p>Loanable funds are the dollars you can lend when you issue more of some liability.
+                They are the dollars a bank can use to purchase productive assets, after setting
+                aside its required cash reserves.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>Demand Deposit (DD):</h2>
+              <hr />
+              <p>-	May be withdrawn at any time without advance notice/penalty.</p>
+              <p>-	Average DD balances tend to move inversely with market interest rates.</p>
+              <p>-	When market rates rise, the bank loses some DD balances.</p>
+              <br>
+              <p><b>Effective Maturity of DD:</b></p>
+              <p>-	Depends upon how much and how quickly depositors adjust their average account
+                balances in response to market interest rate changes.</p>
+              <p>-	If account balance is the same regardless of interest rate levels, DD would
+                  be a perpetual, fixed-rate liability for the issuing bank.</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <h2>The Basel (Basle) Capital Standards</h2>
+              <hr />
+              <p><b>Prior to 1988</b></p>
+              <p>About a dozen central banks began meeting under the auspices of the Bank for International
+                Settlements to design a common set of capital standards for major banks.</p>
+              <br>
+              <p><b>July 1988</b></p>
+              <p>The first set of capital standards was completed. It involved only the bank’s credit
+                (default) risk exposures.</p>
+              <br>
+              <p><b>End of 1992</b></p>
+              <p>U.S. regulators fully implemented risk-based standards - Banks had to set aside 8% of
+                risk adjusted assets of which 4% has to be in Tier I capital consisting mainly of
+                equity instruments.</p>
+              <br>
+              <p><b>August 1995</b></p>
+              <p>The banking agencies have incorporated "market risk" into their formal risk-based
+                capital standards, but only for very large institutions.</p>
+              <br>
+              <p><b>January 1998</b></p>
+              <p>Any bank or banking holding company whose trading activities exceed the smaller of
+                $1 billion or 10% of the institution's total assets, had to hold capital to protect against
+                losses in their foreign exchange, equity, interest-rate, or commodity trading books.
+                The amount of this capital can be specified by each bank’s own internal model of the largest
+                loss it expects to incur (at the 99% confidence level). This capital will be added to the
+                capital required to cover the institution's credit risk on traditional activities.</p>
+              <br>
+              <p><b>2006</b></p>
+              <p>Basel II was adopted which added a more comprehensive approach requiring banks to satisfy three pillars:</p>
+              <p>- Pillar 1 mandated minimum capital for credit, market and operation risk using standardized or
+                Internal Ratings-Based approach.</p>
+              <p>-	Pillar II focused on supervision and internal processes to complement the adequacy of
+                capital.</p>
+              <p>-	Pillar III focused on disclosure and the importance of providing transparent information
+                to the public.</p>
+              <br>
+              <p><b>2008</b></p>
+              <p>The financial crisis highlighted major inadequacies in the minimum capital assessments and
+                Basel III was proposed and adopted for implementation by 2019.</p>
+              <p>Although it maintained the 8% overall capital, it increased the core Tier I ratios
+                to 6% and added on two more requirements; </p>
+              <p><b>1.</b>	A capital conservation buffer of 2.5%</p>
+              <p><b>2.</b>	A potential countercyclical capital buffer that could add another 2.5%.</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
