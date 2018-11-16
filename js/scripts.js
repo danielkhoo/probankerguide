@@ -54,7 +54,7 @@ $(document).scroll(function () {
 	var seven_top = $('#section7').position().top;
 	var eight_top = $('#section8').position().top;
   var nine_top = $('#section9').position().top;
-  var demo_top = $('#sectionDemo').position().top;
+  var ten_top = $('#section10').position().top;
 
 	if (scroll_top > one_top - 100 && scroll_top < two_top - 100) {
 		$('a[href="#section1"]').addClass('active');
@@ -65,8 +65,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
 		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
 	} else if (scroll_top > two_top - 100 && scroll_top < three_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
 		$('a[href="#section2"]').addClass('active');
@@ -76,8 +76,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection2Animation();
 	} else if (scroll_top > three_top - 100 && scroll_top < four_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -88,8 +88,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection3Animation();
 	} else if (scroll_top > four_top - 100 && scroll_top < five_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -100,8 +100,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection4Animation();
 	} else if (scroll_top > five_top - 100 && scroll_top < six_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -112,8 +112,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection5Animation();
 	} else if (scroll_top > six_top - 100 && scroll_top < seven_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -124,8 +124,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').addClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection6Animation();
 	} else if (scroll_top > seven_top - 100 && scroll_top < eight_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -136,8 +136,8 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').addClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection7Animation();
 	} else if (scroll_top > eight_top - 100 && scroll_top < nine_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
@@ -148,10 +148,10 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').addClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection8Animation();
-	} else if (scroll_top > nine_top - 100 && scroll_top < demo_top - 100) {
+	} else if (scroll_top > nine_top - 100 && scroll_top < ten_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
 		$('a[href="#section2"]').removeClass('active');
 		$('a[href="#section3"]').removeClass('active');
@@ -160,20 +160,21 @@ $(document).scroll(function () {
 		$('a[href="#section6"]').removeClass('active');
 		$('a[href="#section7"]').removeClass('active');
 		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').addClass('active');
-		$('a[href="#section9"]').removeClass('active');
-	} else if (scroll_top > demo_top - 100) {
-		$('a[href="#section1"]').removeClass('active');
-		$('a[href="#section2"]').removeClass('active');
-		$('a[href="#section3"]').removeClass('active');
-		$('a[href="#section4"]').removeClass('active');
-		$('a[href="#section5"]').removeClass('active');
-		$('a[href="#section6"]').removeClass('active');
-		$('a[href="#section7"]').removeClass('active');
-		$('a[href="#section8"]').removeClass('active');
-    $('a[href="#sectionDemo"]').removeClass('active');
-		$('a[href="#section9"]').addClass('active');
+    $('a[href="#section9"]').addClass('active');
+    $('a[href="#section10"]').removeClass('active');
     scrollSection9Animation();
+	} else if (scroll_top > ten_top - 100) {
+		$('a[href="#section1"]').removeClass('active');
+		$('a[href="#section2"]').removeClass('active');
+		$('a[href="#section3"]').removeClass('active');
+		$('a[href="#section4"]').removeClass('active');
+		$('a[href="#section5"]').removeClass('active');
+		$('a[href="#section6"]').removeClass('active');
+		$('a[href="#section7"]').removeClass('active');
+		$('a[href="#section8"]').removeClass('active');
+    $('a[href="#section9"]').removeClass('active');
+    $('a[href="#section10"]').addClass('active');
+    scrollSection10Animation();
 	}
 
 });
@@ -217,6 +218,7 @@ function scrollSection2Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
   if (sec2_vid1 === 1) {
     $('#sec2_vid1').addClass('animated pulse infinite');
   }
@@ -230,6 +232,7 @@ function scrollSection3Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
 }
 function scrollSection4Animation(){
   $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -240,6 +243,7 @@ function scrollSection4Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
   if (sec4_vid1 === 1) {
     $('#sec4_vid1').addClass('animated pulse infinite');
   }
@@ -253,6 +257,7 @@ function scrollSection5Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
 
   $('#sec5_card1').addClass('animated bounce');
   $('#sec5_card2').addClass('animated bounce');
@@ -266,6 +271,7 @@ function scrollSection6Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
 }
 function scrollSection7Animation(){
   $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -276,6 +282,7 @@ function scrollSection7Animation(){
   $('#sec7_h1').addClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
   if (sec7_vid1 === 1) {
     $('#sec7_vid1').addClass('animated pulse infinite');
   }
@@ -289,6 +296,7 @@ function scrollSection8Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').addClass('animated bounceInLeft');
   $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
 }
 function scrollSection9Animation(){
   $('#sec2_h1').removeClass('animated bounceInLeft');
@@ -299,4 +307,17 @@ function scrollSection9Animation(){
   $('#sec7_h1').removeClass('animated bounceInLeft');
   $('#sec8_h1').removeClass('animated bounceInLeft');
   $('#sec9_h1').addClass('animated bounceInLeft');
+  $('#sec10_h1').removeClass('animated bounceInLeft');
+}
+
+function scrollSection10Animation(){
+  $('#sec2_h1').removeClass('animated bounceInLeft');
+  $('#sec3_h1').removeClass('animated bounceInLeft');
+  $('#sec4_h1').removeClass('animated bounceInLeft');
+  $('#sec5_h1').removeClass('animated bounceInLeft');
+  $('#sec6_h1').removeClass('animated bounceInLeft');
+  $('#sec7_h1').removeClass('animated bounceInLeft');
+  $('#sec8_h1').removeClass('animated bounceInLeft');
+  $('#sec9_h1').removeClass('animated bounceInLeft');
+  $('#sec10_h1').addClass('animated bounceInLeft');
 }

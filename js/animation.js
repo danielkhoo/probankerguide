@@ -20,11 +20,11 @@ $("#sec1_butt").click(function() {
 
 function assetsLable(){
   $("#section_assetarrow").attr("src", "img/greenup.png");
-  $("#section_liabilityarrow").attr("src", "img/greendown.png");
+  $("#section_liabilityarrow").attr("src", "img/reddown.png");
 }
 
 function liabilityLable(){
-  $("#section_assetarrow").attr("src", "img/reddown.png");
+  $("#section_assetarrow").attr("src", "img/greendown.png");
   $("#section_liabilityarrow").attr("src", "img/redup.png");
 }
 
