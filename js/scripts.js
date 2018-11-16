@@ -53,8 +53,8 @@ $(document).scroll(function () {
 	var six_top = $('#section6').position().top;
 	var seven_top = $('#section7').position().top;
 	var eight_top = $('#section8').position().top;
+  var nine_top = $('#section9').position().top;
   var demo_top = $('#sectionDemo').position().top;
-	var nine_top = $('#section9').position().top;
 
 	if (scroll_top > one_top - 100 && scroll_top < two_top - 100) {
 		$('a[href="#section1"]').addClass('active');
@@ -139,7 +139,7 @@ $(document).scroll(function () {
     $('a[href="#sectionDemo"]').removeClass('active');
 		$('a[href="#section9"]').removeClass('active');
     scrollSection7Animation();
-	} else if (scroll_top > eight_top - 100 && scroll_top < demo_top - 100) {
+	} else if (scroll_top > eight_top - 100 && scroll_top < nine_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
 		$('a[href="#section2"]').removeClass('active');
 		$('a[href="#section3"]').removeClass('active');
@@ -151,7 +151,7 @@ $(document).scroll(function () {
     $('a[href="#sectionDemo"]').removeClass('active');
 		$('a[href="#section9"]').removeClass('active');
     scrollSection8Animation();
-	} else if (scroll_top > demo_top - 100 && scroll_top < nine_top - 100) {
+	} else if (scroll_top > nine_top - 100 && scroll_top < demo_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
 		$('a[href="#section2"]').removeClass('active');
 		$('a[href="#section3"]').removeClass('active');
@@ -162,7 +162,7 @@ $(document).scroll(function () {
 		$('a[href="#section8"]').removeClass('active');
     $('a[href="#sectionDemo"]').addClass('active');
 		$('a[href="#section9"]').removeClass('active');
-	} else if (scroll_top > nine_top - 100) {
+	} else if (scroll_top > demo_top - 100) {
 		$('a[href="#section1"]').removeClass('active');
 		$('a[href="#section2"]').removeClass('active');
 		$('a[href="#section3"]').removeClass('active');

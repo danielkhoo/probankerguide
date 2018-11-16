@@ -188,7 +188,7 @@ max-width:100%;
 .snote ul li a{
   text-decoration:none;
   color:#000;
-  background:#ffc;
+  background:#ffd5cc;
   display:block;
   height:auto;
   width:auto;
@@ -210,7 +210,7 @@ max-width:100%;
   -moz-transform:rotate(4deg);
    position:relative;
   top:5px;
-  background:#cfc;
+  background:#c1daff;
 }
 
 .snote ul li:nth-child(3n) a{
@@ -219,7 +219,7 @@ max-width:100%;
   -moz-transform:rotate(-3deg);
   position:relative;
   top:-5px;
-  background:#ccf;
+  background:#fffedb;
 }
 
 .snote ul li:nth-child(5n) a{
@@ -228,7 +228,7 @@ max-width:100%;
   -moz-transform:rotate(5deg);
   position:relative;
   top:-10px;
-  background:#fcf;
+  background:#ffc6d3;
 }
 
 .snote ul li a:hover{
