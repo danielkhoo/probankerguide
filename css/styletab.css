@@ -53,7 +53,7 @@
 .board {
   position: absolute;
   width: 700px;
-  height: 580px;
+  height: 600px;
   background-color: #edebd7;
   border: 1px solid #423e37;
   box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
@@ -82,7 +82,7 @@
   transform: rotate(-76deg) translateX(101%) translateY(-41%) scale(0.7) skewX(1deg) skewY(12deg);
 }
 .board.hidden:nth-of-type(4) {
-  transform: rotate(-3deg) translateX(101%) translateY(-7%) scale(0.4) skewX(3deg) skewY(6deg);
+  transform: rotate(-76deg) translateX(101%) translateY(-41%) scale(0.7) skewX(1deg) skewY(12deg);
 }
 .board.hidden:nth-of-type(5) {
   transform: rotate(-67deg) translateX(101%) translateY(-2%) scale(0.9) skewX(11deg) skewY(10deg);
