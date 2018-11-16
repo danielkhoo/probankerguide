@@ -37,11 +37,12 @@
 }
 
 .content {
+
     margin-left: 200px;
     height: auto;
     width: auto;
     position: relative;
-    overflow: auto;
+    overflow-x: hidden;
     z-index: 1;
 }
 
