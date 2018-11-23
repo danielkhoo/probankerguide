@@ -24,8 +24,8 @@ function assetsLable(){
 }
 
 function liabilityLable(){
-  $("#section_assetarrow").attr("src", "img/greendown.png");
-  $("#section_liabilityarrow").attr("src", "img/redup.png");
+  $("#section_assetarrow").attr("src", "img/reddown.png");
+  $("#section_liabilityarrow").attr("src", "img/greenup.png");
 }
 
 
